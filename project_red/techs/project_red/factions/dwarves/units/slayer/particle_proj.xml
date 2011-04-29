@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<projectile-particle-system>
+    	<texture value="true" luminance="true" path="images/particle.bmp"/>
+    	<model value="true" path="models/dart.g3d" /> <!-- APENAS A PONTA DA SETA DO TECH ARCHER ! -->
+	<primitive value="quad"/> 
+	<offset x="0.1" y="0.1" z="0"/>
+	<color red="0.2" green="0.7" blue="1.0" alpha="1.0" /> 
+	<color-no-energy red="0.0" green="0.0" blue="0.1" alpha="0.0" /> 
+    	<size value="0.1" /> 
+    	<size-no-energy value="0.0" /> 
+    	<speed value="1" /> 
+	<gravity value="0"/>
+    	<emission-rate value="8" />
+    	<energy-max value="30" />
+    	<energy-var value="5" />
+	
+	<trajectory type="parabolic">
+		<speed value="20"/>
+		<scale value="1.2"/>	
+	</trajectory>
+</projectile-particle-system>

@@ -1,0 +1,170 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<parameters>
+		<size value="4" />
+		<height value="2" />
+		<max-hp value="6000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="wood"/>
+		<sight value="6" />
+		<time value="100" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="1101"/>
+			<row value="0000"/>
+			<row value="1101"/>
+			<row value="1101"/>
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="100" />
+			<resource name="stone" amount="25" />
+			<resource name="wood" amount="175" />
+		</resource-requirements>
+		<resources-stored />
+		<image path="images/hunters_den.bmp" />
+		<image-cancel path="../forester/images/cancel.bmp"/>
+		<meeting-point value="true" image-path="../grand_lodge/images/rally.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="../grand_lodge/sounds/click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../grand_lodge/sounds/click.wav" />
+		</command-sounds>
+	</parameters>
+	
+	<skills>
+		<skill>
+			<type value="stop"/>	
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="50" />
+			<anim-speed value="100" />
+			<animation path="models/hunters_den.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built" />	
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/hunters_den_construction.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="upgrade"/>	
+			<name value="upgrade_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/hunters_den.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/hunters_den.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="die" />	
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../grand_lodge/destruction_models/technodrome_destruction.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="../grand_lodge/sounds/building_fall4.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+		<skill>
+			<type value="morph"/>
+			<name value="morph_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="3950"/>
+			<anim-speed value="28"/>
+			<animation path="models/hunters_den.g3d"/>
+			<sound enabled="false"/>
+		</skill>	
+
+	</skills>
+	
+	<commands>
+	
+		<command>
+			<type value="produce"/>
+			<name value="produce_hunter" />
+			<image path="../hunter/images/hunter.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="hunter"/>
+		</command>	
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_axeman" />
+			<image path="../axeman/images/axeman.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="axeman"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_forest_marauder" />
+			<image path="../forest_marauder/images/marauder.bmp" />
+			<unit-requirements >
+				<unit name="implement_shack"/>
+			</unit-requirements>
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="forest_marauder"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="research_eye_of_the_predator" />
+			<image path="../../upgrades/eye_of_the_predator/images/eye.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="eye_of_the_predator"/>
+		</command>
+
+		<command>
+			<type value="morph"/>
+			<name value="nurture_carpenter_moss"/>
+			<image path="images/mossy_hunters_den.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements>
+				<upgrade name="carpenter_moss"/>
+			</upgrade-requirements>
+			<morph-skill value="morph_skill"/>
+			<morph-unit name= "mossy_hunters_den"/>
+			<cost-modifier value="0"/>
+		</command>	
+
+	</commands>
+</unit>

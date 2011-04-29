@@ -1,0 +1,36 @@
+;
+; Resource names
+;
+energy=Energy
+food=Food
+gold=Gold
+stone=Stone
+wood=Wood
+grace=Grace
+
+;
+; Faction names
+;
+magic=Magic
+tech=Tech
+elves=Elves
+dwarves=Dwarves
+undead=Undead
+woodsmen=Woodsmen
+
+;
+; Attack type names
+;
+slashing=Slashing
+piercing=Piercing
+impact=Impact
+energy=Energy
+
+;
+; Armour type names
+;
+organic=Organic
+leather=Leather
+wood=Wood
+metal=Metal
+stone=Stone

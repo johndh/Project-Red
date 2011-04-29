@@ -1,0 +1,156 @@
+<unit>
+  <parameters>
+    <image path="images/flame_team.bmp" />
+    <image-cancel path="../worker/images/dstop.bmp" />
+    <time value="150" />
+    <size value="2" />
+    <height value="2" />
+    <sight value="10" />
+    <max-hp value="1400" regeneration="0" />
+    <max-ep value="0" />
+    <armor-type value="leather" />
+    <armor value="20" />
+    <multi-selection value="true" />
+    <meeting-point value="false" />
+    <light enabled="false" />
+    <unit-requirements />
+    <upgrade-requirements>
+      <upgrade name="gunpowder" />
+    </upgrade-requirements>
+    <resource-requirements>
+      <resource name="gold" amount="200" />
+      <resource name="stone" amount="25" />
+      <resource name="wood" amount="100" />
+      <resource name="food" amount="2" />
+    </resource-requirements>
+    <resources-stored />
+    <properties />
+    <fields>
+      <field value="land" />
+    </fields>
+    <levels>
+      <level name="hotshot" kills="10" />
+    </levels>
+    <cellmap value="true">
+      <row value="11" />
+      <row value="11" />
+    </cellmap>
+    <selection-sounds enabled="true">
+      <sound path="/sounds/golem_select1.wav" />
+    </selection-sounds>
+    <command-sounds enabled="true">
+      <sound path="/sounds/golem_ack1.wav" />
+    </command-sounds>
+  </parameters>
+  <skills>
+    <skill>
+      <name value="stop_skill" />
+      <type value="stop" />
+      <ep-cost value="0" />
+      <speed value="150" />
+      <anim-speed value="50" />
+      <animation path="models/flame_team_stand.g3d" />
+      <sound enabled="false" />
+    </skill>
+    <skill>
+      <name value="move_skill" />
+      <type value="move" />
+      <ep-cost value="0" />
+      <speed value="160" />
+      <anim-speed value="80" />
+      <animation path="models/flame_team_walk.g3d" />
+      <sound enabled="true" start-time="0">
+        <sound-file path="sounds/golem_walk1.wav" />
+      </sound>
+    </skill>
+    <skill>
+      <name value="attack_skill" />
+      <type value="attack" />
+      <ep-cost value="0" />
+      <speed value="50" />
+      <anim-speed value="60" />
+      <animation path="models/flame_team_attack.g3d" />
+      <sound enabled="true" start-time="0">
+        <sound-file path="/sounds/golem_attack1.wav" />
+      </sound>
+      <attack-strenght value="180" />
+      <attack-var value="20" />
+      <attack-range value="7" />
+      <attack-type value="energy" />
+      <attack-start-time value="0.4" />
+      <attack-fields>
+        <field value="land" />
+        <field value="air" />
+      </attack-fields>
+      <projectile value="true">
+        <particle value="true" path="particle_proj.xml" />
+        <sound enabled="true">
+          <sound-file path="/sounds/battlemage_hit3.wav" />
+          <sound-file path="/sounds/archmage_hit4.wav" />
+        </sound>
+      </projectile>
+      <splash value="true">
+        <radius value="1" />
+        <damage-all value="true" />
+        <particle value="true" path="particle_splash.xml"/>
+      </splash>
+    </skill>
+    <skill>
+      <name value="die_skill" />
+      <type value="die" />
+      <ep-cost value="0" />
+      <speed value="60" />
+      <anim-speed value="60" />
+      <animation path="models/flame_team_die.g3d" />
+      <sound enabled="true" start-time="0">
+        <sound-file path="sounds/golem_die1.wav" />
+      </sound>
+	  <fade value="false"/>
+    </skill>
+    <skill>
+      <name value="be_built_skill" />
+      <type value="be_built" />
+      <ep-cost value="0" />
+      <speed value="120" />
+      <anim-speed value="300" />
+      <animation path="models/flame_team_stand.g3d" />
+      <sound enabled="false" />
+    </skill>
+  </skills>
+  <commands>
+    <command>
+      <name value="stop" />
+      <type value="stop" />
+      <image path="../worker/images/dstop.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <stop-skill value="stop_skill" />
+    </command>
+    <command>
+      <name value="move" />
+      <type value="move" />
+      <image path="../worker/images/dmove.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <move-skill value="move_skill" />
+    </command>
+    <command>
+      <name value="attack" />
+      <type value="attack" />
+      <image path="../worker/images/attack.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <move-skill value="move_skill" />
+      <attack-skill value="attack_skill" />
+    </command>
+    <command>
+      <name value="hold_position" />
+      <type value="attack_stopped" />
+      <image path="../worker/images/dstop.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <stop-skill value="stop_skill" />
+      <attack-skill value="attack_skill" />
+    </command>
+  </commands>
+</unit>

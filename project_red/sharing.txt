@@ -1,0 +1,6 @@
+License:
+-------
+
+Project Red for Glest is published under the Creative Commons Attribution Sharealike 3.0 Unported license.
+Your use, for whatever purpose, of all data included in this folder and all its subfolders down to the last folder-level means YOU AGREE WITH AND DECLARE TO UPHOLD THE PROVISIONS SET FORTH BY THE LICENSE AGREEMENT SPECIFIED HEREIN or any later version.
+Please see file license.txt for the official and complete license agreement.

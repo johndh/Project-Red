@@ -1,0 +1,107 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="1"/>
+		<height value="1"/>
+		<max-hp value="250" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="0"/>
+		<armor-type value="organic"/>					
+		<sight value="10"/>
+		<time value="50"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="50"/>
+			<resource name="wood" amount="25"/>
+			<resource name="food" amount="-10"/>			
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/deer.bmp"/>
+		<image-cancel path="../forester/images/cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="../grand_lodge/sounds/click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../grand_lodge/sounds/click.wav" />
+		</command-sounds>
+
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="55"/>
+			<animation path="models/deer_stand.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="480"/>
+			<anim-speed value="150"/>
+			<animation path="models/deer_move.g3d"/>
+			<sound enabled="false"/>
+		</skill>	
+                
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="90"/>
+			<anim-speed value="90"/>
+			<animation path="models/deer_die.g3d"/>
+			<sound enabled="false"/>
+			<fade value="false"/>
+		</skill>						
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value="stop"/>
+			<name value="stop"/>
+			<image path="../forester/images/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../forester/images/move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		
+	</commands>
+</unit>

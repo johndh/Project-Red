@@ -1,0 +1,145 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+  <!-- *** parameters *** -->
+  <parameters>
+    <size value="2"/>
+    <height value="11" />
+    <max-hp value="10000" regeneration="0"/>
+    <max-ep value="0" />
+    <armor value="0" />
+    <armor-type value="stone"/>
+    <sight value="15" />
+    <time value="250" />
+    <multi-selection value="false" />
+    <cellmap value="false"/>
+    <levels/>
+    <fields>
+      <field value="land" />
+    </fields>
+    <properties>
+      <property value="burnable"/>
+    </properties>
+    <light enabled="false" />
+    <unit-requirements>
+      <unit name="library" />
+    </unit-requirements>
+    <upgrade-requirements />
+    <resource-requirements>
+      <resource name="gold" amount="200" />
+      <resource name="stone" amount="300" />
+      <resource name="wood" amount="100" />
+    </resource-requirements>
+    <resources-stored />
+    <image path="images/portal.bmp"/>
+    <image-cancel path="../archmage/images/magic_cancel.bmp"/>
+    <meeting-point value="false"/>
+    <selection-sounds enabled="true">
+      <sound path="../archmage_tower/sounds/magic_click.wav" />
+    </selection-sounds>
+    <command-sounds enabled="true">
+      <sound path="../archmage_tower/sounds/magic_click.wav" />
+    </command-sounds>
+  </parameters>
+
+  <!-- *** skills *** -->
+  <skills>
+
+    <skill>
+      <type value="be_built"/>
+      <name value="be_built_skill"/>
+      <ep-cost value="0" />
+      <speed value="500" />
+      <anim-speed value="300" />
+      <animation path="../mage_tower/construction_models/portal_construction.g3d" />
+      <sound enabled="false"/>
+    </skill>
+
+    <skill>
+      <type value="stop"/>
+      <name value="stop_skill"/>
+      <ep-cost value="0" />
+      <speed value="300" />
+      <anim-speed value="300" />
+      <animation path="models/portal.g3d" />
+      <sound enabled="false"/>
+    </skill>
+
+    <skill>
+      <type value="upgrade"/>
+      <name value="upgrade_skill"/>
+      <ep-cost value="0" />
+      <speed value="300" />
+      <anim-speed value="300" />
+      <animation path="models/portal.g3d" />
+      <sound enabled="false"/>
+    </skill>
+
+    <skill>
+      <type value="die"/>
+      <name value="die_skill"/>
+      <ep-cost value="0"/>
+      <speed value="300"/>
+      <anim-speed value="300"/>
+      <animation path="../mage_tower/destruction_models/portal_destruction.g3d"/>
+      <sound enabled="true" start-time="0">
+        <sound-file path="../archmage_tower/sounds/magic_building_fall6.wav"/>
+      </sound>
+      <fade value="false"/>
+    </skill>
+    
+    <skill>
+	<type value="load"/>
+	<name value="load_skill"/>
+	<ep-cost value="0"/>
+	<speed value="100"/>
+	<anim-speed value="100"/>
+	<animation path="models/portal_load.g3d"/>
+	<sound enabled="false"/>
+	<max-range value="3"/>
+    </skill>
+		
+    <skill>
+	<type value="unload"/>
+	<name value="unload_skill"/>
+	<ep-cost value="0"/>
+	<speed value="100"/>
+	<anim-speed value="100"/>
+	<animation path="models/portal_unload.g3d"/>
+	<sound enabled="false"/>
+	<max-range value="100"/>
+    </skill>
+
+  </skills>
+  <!-- *** commands *** -->
+  <commands>
+
+    <command>
+	<type value="load"/>
+	<name value="load"/>
+	<image path="images/portal_load.bmp"/>
+	<unit-requirements/>
+	<upgrade-requirements/>
+	<load-skill value="load_skill"/>
+	<units-carried>
+		<unit value="initiate"/>
+		<unit value="battlemage"/>
+		<unit value="daemon"/>
+		<unit value="ghost_armor"/>
+		<unit value="behemoth"/>
+		<unit value="summoner"/>
+		<unit value="drake_rider"/>
+		<unit value="archmage"/>
+	</units-carried>
+		<load-capacity value="12"/>
+    </command>
+		
+    <command>
+		<type value="unload"/>
+		<name value="unload"/>
+		<image path="images/portal_unload.bmp"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<unload-skill value="unload_skill"/>
+    </command>
+  </commands>
+</unit>

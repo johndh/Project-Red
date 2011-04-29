@@ -1,0 +1,96 @@
+<unit>
+  <parameters>
+    <image path="images/rhinox_pen.bmp" />
+    <image-cancel path="../worker/images/dstop.bmp" />
+    <time value="120" />
+    <size value="4" />
+    <height value="3" />
+    <sight value="5" />
+    <max-hp value="5000" regeneration="0" />
+    <max-ep value="0" />
+    <armor-type value="stone" />
+    <armor value="0" />
+    <multi-selection value="false" />
+    <meeting-point value="true" image-path="../stronghold/images/dmeeting.bmp" />
+    <light enabled="false" />
+    <unit-requirements>
+      <unit name="stronghold" />
+      <unit name="warriors_hall" />
+      <unit name="foundry" />
+    </unit-requirements>
+    <upgrade-requirements />
+    <resource-requirements>
+      <resource name="gold" amount="200" />
+      <resource name="stone" amount="100" />
+      <resource name="wood" amount="150" />
+    </resource-requirements>
+    <resources-stored />
+    <properties />
+    <fields>
+      <field value="land" />
+    </fields>
+    <levels />
+    <cellmap value="true">
+      <row value="1111" />
+      <row value="0001" />
+      <row value="0001" />
+      <row value="1111" />
+    </cellmap>
+    <selection-sounds enabled="true">
+      <sound path="../stronghold/sounds/tech_click.wav" />
+    </selection-sounds>
+    <command-sounds enabled="true">
+      <sound path="../stronghold/sounds/tech_click.wav" />
+    </command-sounds>
+  </parameters>
+  <skills>
+    <skill>
+      <name value="be_built_skill" />
+      <type value="be_built" />
+      <ep-cost value="0" />
+      <speed value="120" />
+      <anim-speed value="50" />
+      <animation path="models/dpen_construct.g3d" />
+      <sound enabled="false" />
+    </skill>
+    <skill>
+      <name value="stop_skill" />
+      <type value="stop" />
+      <ep-cost value="0" />
+      <speed value="300" />
+      <anim-speed value="50" />
+      <animation path="models/dpen.g3d" />
+      <sound enabled="false" />
+    </skill>
+    <skill>
+      <name value="produce_skill" />
+      <type value="produce" />
+      <ep-cost value="0" />
+      <speed value="300" />
+      <anim-speed value="50" />
+      <animation path="models/dpen.g3d" />
+      <sound enabled="false" />
+    </skill>
+    <skill>
+      <name value="die_skill" />
+      <type value="die" />
+      <ep-cost value="0" />
+      <speed value="300" />
+      <anim-speed value="300" />
+      <animation path="../stronghold/destruction_models/farmdestruct.g3d" />
+      <sound enabled="false" />
+	  <fade value="false"/>
+    </skill>
+  </skills>
+  <commands>
+    <command>
+      <name value="produce_outrider" />
+      <type value="produce" />
+      <image path="../outrider/images/outrider.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <produce-skill value="produce_skill" />
+      <produced-unit name="outrider" />
+    </command>
+  </commands>
+</unit>

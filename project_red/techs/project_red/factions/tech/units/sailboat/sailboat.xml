@@ -1,0 +1,324 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+  <parameters>
+    <size value="3"/>
+    <height value="4"/>
+    <max-hp value="900" regeneration="0"/>
+    <max-ep value="0"/>
+    <armor value="10"/>
+    <armor-type value="wood"/>
+    <sight value="10"/>
+    <time value="80"/>
+    <multi-selection value="true"/>
+    <cellmap value="false"/>
+    <levels/>
+    <fields>
+      <field value="any_water"/>
+    </fields>
+    <properties>
+      <property value="rotated_climb"/>
+    </properties>
+    <light enabled="false"/>
+    <unit-requirements/>
+    <upgrade-requirements/>
+    <resource-requirements>
+      <resource name="gold" amount="100"/>
+      <resource name="wood" amount="200"/>
+      <resource name="food" amount="1"/>
+    </resource-requirements>
+    <resources-stored/>
+    <image path="images/sailboat.bmp"/>
+    <image-cancel path="../archer/images/tech_cancel.bmp"/>
+    <meeting-point value="false"/>
+    <selection-sounds enabled="true">
+      <sound path="../worker/sounds/worker_select1.wav"/>
+      <sound path="../worker/sounds/worker_select2.wav"/>
+      <sound path="../worker/sounds/worker_select3.wav"/>
+      <sound path="../worker/sounds/worker_select4.wav"/>
+    </selection-sounds>
+    <command-sounds enabled="true">
+      <sound path="../worker/sounds/worker_ack1.wav"/>
+      <sound path="../worker/sounds/worker_ack2.wav"/>
+      <sound path="../worker/sounds/worker_ack3.wav"/>
+      <sound path="../worker/sounds/worker_ack4.wav"/>
+      <sound path="../worker/sounds/worker_ack5.wav"/>
+      <sound path="../worker/sounds/worker_ack6.wav"/>
+      <sound path="../worker/sounds/worker_ack7.wav"/>
+    </command-sounds>
+
+  </parameters>
+
+  <skills>
+
+    <skill>
+      <type value="stop"/>
+      <name value="stop_skill"/>
+      <ep-cost value="0"/>
+      <speed value="1000"/>
+      <anim-speed value="40"/>
+      <animation path="models/sailboat_standing.g3d"/>
+      <sound enabled="false"/>
+    </skill>
+
+    <skill>
+      <type value="move"/>
+      <name value="move_skill"/>
+      <ep-cost value="0"/>
+      <speed value="300"/>
+      <anim-speed value="150"/>
+      <animation path="models/sailboat_walking.g3d"/>
+      <sound enabled="false"/>
+      <!--
+      <sound enabled="true" start-time="0.1">
+        <sound-file path="sounds/sailboat_walk1.wav"/>
+        <sound-file path="sounds/sailboat_walk2.wav"/>
+        <sound-file path="sounds/sailboat_walk3.wav"/>
+        <sound-file path="sounds/sailboat_walk4.wav"/>
+        <sound-file path="sounds/sailboat_walk5.wav"/>
+        <sound-file path="sounds/sailboat_walk6.wav"/>
+      </sound>-->
+    </skill>
+
+    <!--<skill>
+      <type value="attack"/>
+      <name value="attack_skill"/>
+      <ep-cost value="0"/>
+      <speed value="50"/>
+      <anim-speed value="50"/>
+      <animation path="models/sailboat_attacking.g3d"/>
+      <sound enabled="true" start-time="0.1">
+        <sound-file path="sounds/sailboat_attack1.wav"/>
+        <sound-file path="sounds/sailboat_attack2.wav"/>
+      </sound>
+      <attack-strenght value="300"/>
+      <attack-var value="100"/>
+      <attack-range value="10"/>
+      <attack-type value="impact"/>
+      <attack-start-time value="0.7"/>
+      <attack-fields>
+        <field value="land"/>
+      </attack-fields>
+      <projectile value="true">
+        <particle value="true" path="particle_proj.xml"/>
+        <sound enabled="true">
+          <sound-file path="/sounds/sailboat_hit1.wav"/>
+          <sound-file path="/sounds/sailboat_hit2.wav"/>
+        </sound>
+      </projectile>
+      <splash value="true">
+        <radius value="2"/>
+        <damage-all value="true"/>
+        <particle value="true" path="particle_splash.xml"/>
+      </splash>
+    </skill>-->
+
+    <skill>
+      <type value="die"/>
+      <name value="die_skill"/>
+      <ep-cost value="0"/>
+      <speed value="120"/>
+      <anim-speed value="120"/>
+      <animation path="models/sailboat_dying.g3d"/>
+      <sound enabled="false"/>
+      <!--<sound enabled="true" start-time="0.1">
+        <sound-file path="sounds/sailboat_die1.wav"/>
+        <sound-file path="sounds/sailboat_die2.wav"/>
+        <sound-file path="sounds/sailboat_die3.wav"/>
+      </sound>-->
+      <fade value="false"/>
+    </skill>
+
+    <skill>
+      <type value="stop"/>
+      <name value="stop_skill"/>
+      <ep-cost value="0"/>
+      <speed value="1000"/>
+      <anim-speed value="40"/>
+      <animation path="models/sailboat_standing.g3d"/>
+      <sound enabled="false"/>
+    </skill>
+    
+    <skill>
+	<type value="load"/>
+	<name value="load_skill"/>
+	<ep-cost value="0"/>
+	<speed value="100"/>
+	<anim-speed value="100"/>
+	<animation path="models/sailboat_load.g3d"/>
+	<sound enabled="false"/>
+	<max-range value="3"/>
+    </skill>
+		
+    <skill>
+	<type value="unload"/>
+	<name value="unload_skill"/>
+	<ep-cost value="0"/>
+	<speed value="100"/>
+	<anim-speed value="100"/>
+	<animation path="models/sailboat_load.g3d"/>
+	<sound enabled="false"/>
+	<max-range value="2"/>
+    </skill>
+
+    <skill>
+      <type value="build"/>
+      <name value="build_skill"/>
+      <ep-cost value="0"/>
+      <speed value="105"/>
+      <anim-speed value="100"/>
+      <animation path="models/worker_building.g3d"/>
+      <sound enabled="true" start-time="0.5">
+        <sound-file path="../worker/sounds/worker_build1.wav"/>
+        <sound-file path="../worker/sounds/worker_build2.wav"/>
+        <sound-file path="../worker/sounds/worker_build3.wav"/>
+      </sound>
+    </skill>
+
+    <skill>
+      <type value="repair"/>
+      <name value="repair_skill"/>
+      <ep-cost value="0"/>
+      <speed value="40"/>
+      <anim-speed value="100"/>
+      <animation path="models/sailboat_building.g3d"/>
+      <sound enabled="true" start-time="0.5">
+        <sound-file path="../worker/sounds/worker_build1.wav"/>
+        <sound-file path="../worker/sounds/worker_build2.wav"/>
+        <sound-file path="../worker/sounds/worker_build3.wav"/>
+      </sound>
+    </skill>
+
+  </skills>
+
+  <commands>
+
+    <command>
+      <type value="stop"/>
+      <name value="stop"/>
+      <image path="../archer/images/tech_stop.bmp"/>
+      <unit-requirements/>
+      <upgrade-requirements/>
+      <stop-skill value="stop_skill"/>
+    </command>
+
+    <command>
+      <type value="move"/>
+      <name value="move"/>
+      <image path="../archer/images/tech_move.bmp"/>
+      <unit-requirements/>
+      <upgrade-requirements/>
+      <move-skill value="move_skill"/>
+    </command>
+
+    <!--<command>
+      <type value="attack"/>
+      <name value="fire_ball"/>
+      <image path="images/sailboat_attack.bmp"/>
+      <unit-requirements/>
+      <upgrade-requirements/>
+      <move-skill value="move_skill"/>
+      <attack-skill value="attack_skill"/>
+    </command>
+
+    <command>
+      <type value="patrol"/>
+      <name value="patrol"/>
+      <image path="../archer/images/tech_patrol.bmp"/>
+      <unit-requirements/>
+      <upgrade-requirements/>
+      <move-skill value="move_skill"/>
+      <attack-skill value="attack_skill"/>
+      <max-distance value="7"/>
+    </command>
+
+    <command>
+      <type value="guard"/>
+      <name value="guard"/>
+      <image path="../archer/images/tech_guard.bmp"/>
+      <unit-requirements/>
+      <upgrade-requirements/>
+      <move-skill value="move_skill"/>
+      <attack-skill value="attack_skill"/>
+      <max-distance value="4"/>
+    </command>
+
+    <command>
+      <type value="attack_stopped"/>
+      <name value="hold_position"/>
+      <image path="../archer/images/tech_hold.bmp"/>
+      <unit-requirements/>
+      <upgrade-requirements>
+        <upgrade name="training_field"/>
+      </upgrade-requirements>
+      <stop-skill value="stop_skill"/>
+      <attack-skill value="attack_skill"/>
+    </command>-->
+    
+    <command>
+      <type value="build"/>
+      <name value="build"/>
+      <image path="../worker/images/worker_build_basic.bmp"/>
+      <unit-requirements/>
+      <upgrade-requirements/>
+      <move-skill value="move_skill"/>
+      <build-skill value="build_skill"/>
+      <buildings>
+        <building name="dock" tip="dock_info"/>
+        <building name="naval_tower" tip="naval_tower_info"/>
+      </buildings>
+      <start-sound enabled="false"/>
+      <built-sound enabled="true">
+        <sound-file path="../worker/sounds/worker_work_end1.wav"/>
+        <sound-file path="../worker/sounds/worker_work_end2.wav"/>
+        <sound-file path="../worker/sounds/worker_work_end3.wav"/>
+      </built-sound>
+    </command>
+    
+    <command>
+      <type value="repair"/>
+      <name value="repair"/>
+      <image path="../worker/images/worker_repair.bmp"/>
+      <unit-requirements/>
+      <upgrade-requirements/>
+      <move-skill value="move_skill"/>
+      <repair-skill value="repair_skill"/>
+      <repaired-units>
+        <unit name="dock"/>
+        <unit name="naval_tower"/>
+        <unit name="sailboat"/>
+        <unit name="transport_ship"/>
+      </repaired-units>
+    </command>
+    
+    <command>
+	<type value="load"/>
+	<name value="load"/>
+	<image path="../transport_ship/images/transport_load.bmp"/>
+	<unit-requirements/>
+	<upgrade-requirements/>
+	<move-skill value="move_skill"/>
+	<load-skill value="load_skill"/>
+	<units-carried>
+		<unit value="worker"/>
+		<unit value="technician"/>
+		<unit value="swordman"/>
+		<unit value="archer"/>
+		<unit value="guard"/>
+		<unit value="pig"/>
+	</units-carried>
+	<load-capacity value="1"/>
+    </command>
+		
+    <command>
+	<type value="unload"/>
+	<name value="unload"/>
+	<image path="../transport_ship/images/transport_unload.bmp"/>
+	<unit-requirements/>
+	<upgrade-requirements/>
+	<move-skill value="move_skill"/>
+	<unload-skill value="unload_skill"/>
+    </command>
+
+  </commands>
+</unit>

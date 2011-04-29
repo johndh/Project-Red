@@ -1,0 +1,38 @@
+;
+; Resource names
+;
+energy=Energía
+food=Comida
+gold=Oro
+stone=Piedra
+wood=Madera
+grace=Gracia
+
+;
+; Faction names
+;
+magic=Magic
+tech=Tech
+elves=Elfos
+dwarves=Enanos
+undead=Muertos Vivientes
+woodsmen=Leñadores
+
+;
+; Attack type names
+;
+slashing=Roza
+piercing=Penetrante
+impact=Impactante
+energy=Energía
+
+;
+; Armour type names
+;
+organic=Orgánica
+leather=Cuero
+wood=Madera
+metal=Metal
+stone=Piedra
+
+

@@ -1,0 +1,68 @@
+<unit>
+  <parameters>
+    <image path="images/observation_balloon.bmp" />
+    <image-cancel path="../worker/images/dstop.bmp" />
+    <time value="40" />
+    <size value="2" />
+    <height value="6" />
+    <sight value="32" />
+    <max-hp value="1200" regeneration="0" />
+    <max-ep value="0" />
+    <armor-type value="stone" />
+    <armor value="15" />
+    <multi-selection value="false" />
+    <meeting-point value="false" />
+    <light enabled="false" />
+    <unit-requirements>
+      <unit name="engineer" />
+    </unit-requirements>
+    <upgrade-requirements />
+    <resource-requirements>
+      <resource name="gold" amount="100" />
+      <resource name="wood" amount="100" />
+    </resource-requirements>
+    <resources-stored />
+    <properties />
+    <fields>
+      <field value="land" />
+    </fields>
+    <levels />
+    <cellmap value="true">
+      <row value="11" />
+      <row value="11" />
+    </cellmap>
+    <selection-sounds enabled="false" />
+    <command-sounds enabled="false" />
+  </parameters>
+  <skills>
+    <skill>
+      <name value="stop_skill" />
+      <type value="stop" />
+      <ep-cost value="0" />
+      <speed value="300" />
+      <anim-speed value="100" />
+      <animation path="models/ob_balloon.g3d" />
+      <sound enabled="false" />
+    </skill>
+    <skill>
+      <name value="be_built_skill" />
+      <type value="be_built" />
+      <ep-cost value="0" />
+      <speed value="300" />
+      <anim-speed value="300" />
+      <animation path="models/ob_balloon_construct.g3d" />
+      <sound enabled="false" />
+    </skill>
+    <skill>
+      <name value="die_skill" />
+      <type value="die" />
+      <ep-cost value="0" />
+      <speed value="300" />
+      <anim-speed value="300" />
+      <animation path="models/ob_balloon.g3d" />
+      <sound enabled="false" />
+	  <fade value="false"/>
+    </skill>
+  </skills>
+  <commands />
+</unit>

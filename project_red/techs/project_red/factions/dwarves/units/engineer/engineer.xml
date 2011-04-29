@@ -1,0 +1,198 @@
+<unit>
+  <parameters>
+    <image path="images/engineer.bmp" />
+    <image-cancel path="../worker/images/dstop.bmp" />
+    <time value="80" />
+    <size value="1" />
+    <height value="2" />
+    <sight value="8" />
+    <max-hp value="700" regeneration="0" /> 
+    <max-ep value="0" />
+    <armor value="10" />
+    <armor-type value="leather" />
+    <multi-selection value="true" />
+    <meeting-point value="false" />
+    <light enabled="false" />
+    <unit-requirements />
+    <upgrade-requirements />
+    <resource-requirements>
+      <resource name="gold" amount="25" />
+      <resource name="wood" amount="25" />
+    </resource-requirements>
+    <resources-stored />
+    <properties />
+    <fields>
+      <field value="land" />
+    </fields>
+    <levels />
+    <cellmap value="true">
+      <row value="1" />
+    </cellmap>
+    <selection-sounds enabled="true">
+      <sound path="sounds/technician_select1.wav" />
+    </selection-sounds>
+    <command-sounds enabled="true">
+      <sound path="sounds/technician_ack1.wav" />
+    </command-sounds>
+  </parameters>
+  <skills>
+    <skill>
+      <name value="stop_skill" />
+      <type value="stop" />
+      <ep-cost value="0" />
+      <speed value="1000" />
+      <anim-speed value="55" />
+      <animation path="models/engineer_stand.g3d" />
+      <sound enabled="false" />
+    </skill>
+    <skill>
+      <name value="move_skill" />
+      <type value="move" />
+      <ep-cost value="0" />
+      <speed value="190" />
+      <anim-speed value="130" />
+      <animation path="models/engineer_walk.g3d" />
+      <sound enabled="false" />
+    </skill>
+    <skill>
+      <name value="repair_skill" />
+      <type value="repair" />
+      <ep-cost value="0" />
+      <speed value="100" />
+      <anim-speed value="150" />
+      <animation path="models/engineer_repair.g3d" />
+      <sound enabled="true" start-time="0">
+        <sound-file path="sounds/technician_build1.wav" />
+      </sound>
+    </skill>
+    <skill>
+      <name value="build_skill" />
+      <type value="build" />
+      <ep-cost value="0" />
+      <speed value="105" />
+      <anim-speed value="80" />
+      <animation path="models/engineer_build.g3d" />
+      <sound enabled="true" start-time="0.5">
+        <sound-file path="sounds/technician_build1.wav" />
+      </sound>
+    </skill>
+    <skill>
+      <name value="build_flamer" />
+      <type value="morph" />
+      <ep-cost value="0" />
+      <speed value="500" />
+      <anim-speed value="200" />
+      <animation path="models/engineer_build_flamer.g3d" />
+      <sound enabled="true" start-time="0">
+        <sound-file path="sounds/technician_build1.wav" />
+      </sound>
+    </skill>
+    <skill>
+      <name value="build_bombard" />
+      <type value="morph" />
+      <ep-cost value="0" />
+      <speed value="500" />
+      <anim-speed value="200" />
+      <animation path="models/engineer_build_bombard.g3d" />
+      <sound enabled="true" start-time="0">
+        <sound-file path="sounds/technician_build1.wav" />
+      </sound>
+    </skill>
+
+    <skill>
+      <name value="die_skill" />
+      <type value="die" />
+      <ep-cost value="0" />
+      <speed value="90" />
+      <anim-speed value="50" />
+      <animation path="models/engineer_die.g3d" />
+      <sound enabled="true" start-time="0">
+        <sound-file path="sounds/technician_die1.wav" />
+      </sound>
+	  <fade value="false"/>
+    </skill>
+  </skills>
+
+  <commands>
+    <command>
+      <name value="stop" />
+      <type value="stop" />
+      <image path="../worker/images/dstop.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <stop-skill value="stop_skill" />
+    </command>
+    <command>
+      <name value="move" />
+      <type value="move" />
+      <image path="../worker/images/dmove.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <move-skill value="move_skill" />
+    </command>
+    <command>
+      <name value="repair" />
+      <type value="repair" />
+      <image path="../worker/images/drepair.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <move-skill value="move_skill" />
+      <repair-skill value="repair_skill" />
+      <repaired-units>
+        <unit name="stronghold" />
+        <unit name="farm" />
+        <unit name="warriors_hall" />
+        <unit name="defense_tower" />
+        <unit name="foundry" />
+        <unit name="rhinox_pen" />
+        <unit name="flame_team" />
+        <unit name="bombard" />
+        <unit name="observation_balloon" />
+        <unit name="turtle"/>
+        <!--
+        <unit name="utility_barge"/>
+        <unit name="thunder_ship"/>
+        <unit name="dragon_ship"/>
+        -->
+      </repaired-units>
+    </command>
+    <command>
+      <name value="build_flame_team" />
+      <type value="morph" />
+      <image path="../flame_team/images/flame_team.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <morph-skill value="build_flamer" />
+      <morph-unit name="flame_team" />
+      <cost-modifier value="40" />
+    </command>
+    <command>
+      <name value="build_bombard" />
+      <type value="morph" />
+      <image path="../bombard/images/bombard.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <morph-skill value="build_bombard" />
+      <morph-unit name="bombard" />
+      <cost-modifier value="40" />
+    </command>
+
+    <command>
+      <name value="build" />
+      <type value="build" />
+      <image path="../worker/images/dbuild.bmp" />
+      <unit-requirements />
+      <upgrade-requirements />
+      <move-skill value="move_skill" />
+      <build-skill value="build_skill" />
+      <buildings>
+        <building name="observation_balloon" />
+        <!--
+        <building name="utility_barge"/>
+        -->
+      </buildings>
+      <start-sound enabled="false" />
+      <built-sound enabled="false" />
+    </command>
+  </commands>
+</unit>

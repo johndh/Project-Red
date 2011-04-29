@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+
+<upgrade>
+	<image path="images/fortify.bmp"/>
+	<image-cancel path="../heroic_valour/images/dstop.bmp"/>
+	<time value="500"/>
+	<unit-requirements>
+		<unit name="foundry"/>
+	</unit-requirements>
+	<upgrade-requirements/>
+	<resource-requirements>
+		<resource name="gold" amount="300"/>
+		<resource name="stone" amount="300"/>
+	</resource-requirements>
+	<effects>
+		<unit name="farm"/>
+		<unit name="stronghold"/>
+		<unit name="warriors_hall"/>
+		<unit name="defense_tower"/>
+		<unit name="foundry"/>
+		<unit name="rhinox_pen"/>
+	</effects>
+	<max-hp value="1000"/>
+	<max-ep value="0"/>
+	<sight value="0"/>
+	<attack-strenght value="0"/>
+	<attack-range value="0"/>
+	<armor value="0"/>
+	<move-speed value="0"/>
+	<production-speed value="0"/>
+</upgrade>

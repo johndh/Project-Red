@@ -1,0 +1,137 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+	<parameters>
+		<size value="2"/>
+		<height value="6"/>
+		<max-hp value="6000" regeneration="15"/>
+		<max-ep value="0"/>
+		<armor value="40"/>	
+		<armor-type value="wood"/>			
+		<sight value="16"/>
+		<time value="140"/>	
+		<multi-selection value="false"/>
+		<cellmap value="false"/>
+		<levels/>	
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false"/>
+		<unit-requirements>
+			<unit name="forest_elder_guardian"/>
+		</unit-requirements>
+		<upgrade-requirements>
+			<upgrade name="forest_elders"/>
+			<upgrade name="carpenter_moss"/>
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="stone" amount="25"/>
+		</resource-requirements>
+		<resources-stored/>
+		<image path="../forest_elder_guardian/images/mossy_forest_elder_guardian.bmp"/>
+		<image-cancel path="../forester/images/cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="../grand_lodge/sounds/click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../grand_lodge/sounds/click.wav" />
+		</command-sounds>
+	</parameters>
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="100"/>
+			<animation path="../forest_elder_guardian/models/forest_elder_guardian.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="be_built"/>
+			<name value="be_built_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="1"/>
+			<animation path="../forest_elder_guardian/models/forest_elder_guardian_grow.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="80"/>
+			<anim-speed value="90"/>
+			<animation path="../forest_elder_guardian/models/forest_elder_guardian.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../forest_elder_guardian/sounds/attack1.wav"/>
+				<sound-file path="../forest_elder_guardian/sounds/attack2.wav"/>
+			</sound>
+			<attack-strenght value="165"/>
+			<attack-var value="45"/>
+			<attack-range value="9"/>
+			<attack-type value="piercing"/>
+			<attack-start-time value="0.3"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="true">
+					<sound-file path="../hunter/sounds/arrow_hit1.wav"/>
+					<sound-file path="../hunter/sounds/arrow_hit2.wav"/>
+					<sound-file path="../hunter/sounds/arrow_hit3.wav"/>
+					<sound-file path="../hunter/sounds/arrow_hit4.wav"/>
+					<sound-file path="../hunter/sounds/arrow_hit5.wav"/>
+				</sound>
+			</projectile>
+			<splash value="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="300"/>
+			<animation path="../grand_lodge/destruction_models/technodrome_destruction.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="../grand_lodge/sounds/building_fall5.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<commands>
+
+		<command>
+			<type value="stop"/>
+			<name value="attack_off"/>
+			<image path="../forest_elder_guardian/images/spear_no_attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="attack_on"/>
+			<image path="../forest_elder_guardian/images/spear_attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<attack-skill value="attack_skill"/>
+                        <stop-skill value="stop_skill"/>
+		</command>
+
+	</commands>
+</unit>

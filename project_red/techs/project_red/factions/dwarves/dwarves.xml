@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		<resource name="gold" amount="500"/>
+		<resource name="wood" amount="400"/>	
+		<resource name="stone" amount="500"/>	
+		<resource name="food" amount="200"/>	
+	</starting-resources>
+	<starting-units>
+		<unit name="stronghold" amount="1"/>
+		<unit name="worker" amount="2"/>
+		<unit name="miner" amount="1"/>	
+		<unit name="farm" amount="0"/>
+		<unit name="warriors_hall" amount="0"/>
+		<unit name="warrior" amount="2"/>
+		<unit name="guardian" amount="0"/>
+		<unit name="slayer" amount="0"/>
+		<unit name="rhinox_pen" amount="0"/>
+		<unit name="outrider" amount="0"/>
+		<unit name="foundry" amount="0"/>
+		<unit name="cannoneer" amount="1"/>
+		<unit name="engineer" amount="0"/>
+		<unit name="flame_team" amount="0"/>
+		<unit name="defense_tower" amount="1"/>
+		<unit name="bombard" amount="0"/>
+<!--		<unit name="skyship" amount="0"/>-->
+		<unit name="pig" amount="2"/>
+	</starting-units>	
+	<music value="true" path="music/dwarf.ogg"/>
+</faction>

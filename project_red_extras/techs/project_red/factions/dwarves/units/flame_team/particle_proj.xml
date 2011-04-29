@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<projectile-particle-system>
+    	<texture value="true" luminance="true" path="images/flame_particle.bmp"/>
+    	<model value="false"/> 
+	<primitive value="quad"/>
+	<offset x="0.1" y="-0.3" z="1.2"/> 
+	<color red="1.0" green="0.4" blue="0" alpha="0.5" /> 
+	<color-no-energy red="0.5" green="0" blue="0" alpha="0.2" /> 
+    	<size value="0.6" /> 
+    	<size-no-energy value="0.2" /> 
+    	<speed value="7" />
+	<gravity value="-0.15"/> 
+    	<emission-rate value="12" /> 
+    	<energy-max value="30" /> 
+    	<energy-var value="3" /> 
+	
+	<trajectory type="spiral">
+		<speed value="12"/>
+		<scale value="0.2"/> 
+		<frequency value="9"/> <!-- EDITADO - ERA 9 NA MINHA ÚLTIMA VERSÃO -->
+	</trajectory>
+</projectile-particle-system>

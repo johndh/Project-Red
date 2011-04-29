@@ -1,0 +1,109 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="4" /> <!-- ESTE VALOR ESTÁ INCORRECTO (MELHOR OPÇÃO SERÁ PROVAVELMENTE RE-ESCALAR O MODELO G3D. PARA JÁ, EDITEI APENAS O CELLMAP ABAIXO QUE ESTAVA COMPLETAMENTE ERRADO. NOTA: ESTE MODELO É RECTANGULAR, NÃO QUADRADO!!! ESTE VAI SER, PROVAVELMENTE, O MODELO MAIS DIFÍCIL DE CORRIGIR. -->
+		<height value="2" />
+		<max-hp value="3000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="wood"/>				
+		<sight value="5" />
+		<time value="50" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="0001" /> 
+			<row value="1101" /> 
+			<row value="1101" /> 
+			<row value="1001" /> 
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements>
+			<unit name="stronghold" />
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="100"/>
+			<resource name="stone" amount="100"/> 
+			<resource name="wood" amount="100"/> 
+			<resource name="food" amount="-20"/> 
+		</resource-requirements>
+		<resources-stored />
+		<image path="images/dfarm.bmp"/>
+		<image-cancel path="images/dfarm.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="false"/>
+		<command-sounds enabled="false"/>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="120"/>
+			<speed value="120"/>
+			<anim-speed value="50" />
+			<animation path="models/farmconstruct.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="50" />
+			<animation path="models/farm.g3d" />
+			<sound enabled="false" />
+		</skill>	
+
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="50" />
+			<animation path="models/farm.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../stronghold/destruction_models/farmdestruct.g3d" />
+			<sound enabled="false"/>	
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+
+	<commands>
+	
+		<command>
+			<type value="produce"/>
+			<name value="produce_pig" />
+			<image path="../pig/images/pig.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="pig"/>
+		</command>
+
+	</commands>
+	
+</unit>
