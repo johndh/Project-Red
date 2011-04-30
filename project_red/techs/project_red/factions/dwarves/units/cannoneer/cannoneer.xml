@@ -74,7 +74,8 @@
 			<anim-speed value="50"/>
 			<animation path="models/canoneer_attack.g3d"/>
 			<sound enabled="true" start-time="0.5">
-				<sound-file path="/sounds/archer_attack1.wav"/>
+				<sound-file path="/sounds/explode.wav"/>
+				<sound-file path="/sounds/explodemini.wav"/>
 			</sound>
 			<attack-strenght value="120"/> 
 			<attack-var value="30"/> 

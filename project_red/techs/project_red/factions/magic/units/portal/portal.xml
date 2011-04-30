@@ -94,7 +94,9 @@
 	<speed value="100"/>
 	<anim-speed value="100"/>
 	<animation path="models/portal_load.g3d"/>
-	<sound enabled="false"/>
+	<sound enabled="true" start-time="0.5">
+		<sound-file path="sounds/ghost.wav"/>
+	</sound>
 	<max-range value="3"/>
     </skill>
 		
@@ -105,7 +107,9 @@
 	<speed value="100"/>
 	<anim-speed value="100"/>
 	<animation path="models/portal_unload.g3d"/>
-	<sound enabled="false"/>
+	<sound enabled="true" start-time="0.5">
+		<sound-file path="sounds/teleport.wav"/>
+	</sound>
 	<max-range value="100"/>
     </skill>
 

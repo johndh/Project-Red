@@ -1,7 +1,7 @@
 ;
 ; Resource names
 ;
-energy=Energ√≠a
+energy=EnergÌa
 food=Comida
 gold=Oro
 stone=Piedra
@@ -16,7 +16,7 @@ tech=Tech
 elves=Elfos
 dwarves=Enanos
 undead=Muertos Vivientes
-woodsmen=Le√±adores
+woodsmen=LeÒadores
 
 ;
 ; Attack type names
@@ -24,12 +24,12 @@ woodsmen=Le√±adores
 slashing=Roza
 piercing=Penetrante
 impact=Impactante
-energy=Energ√≠a
+energy=EnergÌa
 
 ;
 ; Armour type names
 ;
-organic=Org√°nica
+organic=Org·nica
 leather=Cuero
 wood=Madera
 metal=Metal

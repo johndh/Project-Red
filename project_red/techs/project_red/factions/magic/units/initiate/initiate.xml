@@ -365,7 +365,7 @@
       <upgrade-requirements/>
       <morph-skill value="morph_skill"/>
       <morph-unit name= "battlemage"/>
-      <discount value="0"/>
+      <cost-modifier value="0"/>
     </command>
     
     <command>
@@ -376,7 +376,7 @@
       <upgrade-requirements/>
       <morph-skill value="morph_skill"/>
       <morph-unit name= "renewer"/>
-      <discount value="0"/>
+      <cost-modifier value="0"/>
     </command>
   </commands>
 </unit>
