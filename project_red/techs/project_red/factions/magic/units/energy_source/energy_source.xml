@@ -103,10 +103,10 @@
    <upgrade-requirements />
    <produce-skill value="produce_skill"/>
    <produced>
-      <name value="14_energy" />
+      <name value="14_energy"/>
       <time value="60" />
-      <image path="images/14_energy.bmp"/>
-      <image-cancel path="images/cancel.bmp"/>
+      <image path="images/make_energy.bmp"/>
+      <image-cancel path="../archmage/images/magic_cancel.bmp"/>
       <unit-requirements/>
       <upgrade-requirements/>
       <resource-requirements>

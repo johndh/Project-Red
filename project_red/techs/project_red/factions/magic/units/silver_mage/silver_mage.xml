@@ -85,6 +85,21 @@
       <animation path="models/silver_mage_walking.g3d"/>
       <sound enabled="false"/>
     </skill>
+    
+    <skill>
+    	<type value="move"/>
+    	<name value="teleport_skill"/>
+    	<ep-cost value="200"/>
+    	<speed value="200"/>
+    	<anim-speed value="100"/>
+    	<visible-only value="true"/>
+    	<animation path="models/silver_mage_teleporting.g3d"/>
+    	<sound enabled="true" start-time="1.0">
+    		<sound-file path="sounds/anchor_action.wav"/>
+    		<sound-file path="sounds/exit.wav"/>
+    		<sound-file path="sounds/link.wav"/>
+    	</sound>
+    </skill>
 
 <!--    <skill>
       <type value="attack"/>
@@ -168,6 +183,15 @@
       <unit-requirements/>
       <upgrade-requirements/>
       <move-skill value="move_skill"/>
+    </command>
+    
+    <command>
+    	<type value="teleport"/>
+    	<name value="teleport"/>
+    	<image path="images/magic_teleport.bmp"/>
+    	<unit-requirements/>
+    	<upgrade-requirements/>
+    	<move-skill value="teleport_skill"/>
     </command>
 
 <!--    <command>

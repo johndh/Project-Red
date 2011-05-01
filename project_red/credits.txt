@@ -17,6 +17,7 @@ John.d.h - Project Red art and assets
 Psychedelic Hands - Project Red art and assets
 Ogrebane (http://opengameart.org/users/ogrebane) - sounds
 Legoluft (http://legoluft.de) - http://opengameart.org/content/atmospheric-interaction
+Luke.RUSTLTD - http://www.opengameart.org/content/4-summoning-circles
 
 Tech:
 The Glest Team - original authors, original art and assets

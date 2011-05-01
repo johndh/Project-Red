@@ -223,7 +223,7 @@
       <upgrade-requirements/>
       <morph-skill value="morph_skill"/>
       <morph-unit name= "archmage"/>
-      <discount value="0"/>
+      <cost-modifier value="0"/>
     </command>
     
     <command>
@@ -234,7 +234,7 @@
       <upgrade-requirements/>
       <morph-skill value="morph_skill"/>
       <morph-unit name= "silver_mage"/>
-      <discount value="0"/>
+      <cost-modifier value="0"/>
     </command>
 
   </commands>
