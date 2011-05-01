@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit-particle-system>
+    	<texture value="true" path="../summoner/images/summoner_particle_proj.bmp" luminance="false"/>
+	<primitive value="quad"/>
+	<offset x="0" y="0.9" z="0"/>
+	<direction x="0" y="0.02" z="0"/>
+	<color red="0.8" green="0.9" blue="1" alpha="0.9"/>
+	<color-no-energy red="0.75" green="0.9" blue="1" alpha="0.8"/>
+    	<radius value="1"/>
+    	<size value="0.5"/>
+    	<size-no-energy value="1.75"/>
+    	<speed value="10"/>
+	<gravity value="0"/>
+    	<emission-rate value="4"/>
+    	<energy-max value="12"/>
+    	<energy-var value="20"/>
+	<relative value="true"/>
+    	<fixed value="false"/>
+    	<teamcolorNoEnergy value="true"/>
+    	<teamcolorEnergy value="false"/>
+</unit-particle-system>
