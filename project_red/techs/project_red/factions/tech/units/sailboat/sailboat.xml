@@ -57,7 +57,7 @@
       <ep-cost value="0"/>
       <speed value="1000"/>
       <anim-speed value="40"/>
-      <animation path="models/sailboat_standing.g3d"/>
+      <animation path="models/sailboat.g3d"/>
       <sound enabled="false"/>
     </skill>
 
@@ -67,7 +67,7 @@
       <ep-cost value="0"/>
       <speed value="300"/>
       <anim-speed value="150"/>
-      <animation path="models/sailboat_walking.g3d"/>
+      <animation path="models/sailboat.g3d"/>
       <sound enabled="false"/>
       <!--
       <sound enabled="true" start-time="0.1">
@@ -135,7 +135,7 @@
       <ep-cost value="0"/>
       <speed value="1000"/>
       <anim-speed value="40"/>
-      <animation path="models/sailboat_standing.g3d"/>
+      <animation path="models/sailboat.g3d"/>
       <sound enabled="false"/>
     </skill>
     
@@ -145,9 +145,9 @@
 	<ep-cost value="0"/>
 	<speed value="100"/>
 	<anim-speed value="100"/>
-	<animation path="models/sailboat_load.g3d"/>
+	<animation path="models/sailboat.g3d"/>
 	<sound enabled="false"/>
-	<max-range value="3"/>
+	<max-range value="4"/>
     </skill>
 		
     <skill>
@@ -156,9 +156,9 @@
 	<ep-cost value="0"/>
 	<speed value="100"/>
 	<anim-speed value="100"/>
-	<animation path="models/sailboat_load.g3d"/>
+	<animation path="models/sailboat.g3d"/>
 	<sound enabled="false"/>
-	<max-range value="2"/>
+	<max-range value="4"/>
     </skill>
 
     <skill>
@@ -167,7 +167,7 @@
       <ep-cost value="0"/>
       <speed value="105"/>
       <anim-speed value="100"/>
-      <animation path="models/worker_building.g3d"/>
+      <animation path="models/sailboat.g3d"/>
       <sound enabled="true" start-time="0.5">
         <sound-file path="../worker/sounds/worker_build1.wav"/>
         <sound-file path="../worker/sounds/worker_build2.wav"/>
@@ -181,7 +181,7 @@
       <ep-cost value="0"/>
       <speed value="40"/>
       <anim-speed value="100"/>
-      <animation path="models/sailboat_building.g3d"/>
+      <animation path="models/sailboat.g3d"/>
       <sound enabled="true" start-time="0.5">
         <sound-file path="../worker/sounds/worker_build1.wav"/>
         <sound-file path="../worker/sounds/worker_build2.wav"/>
