@@ -5,16 +5,16 @@
     <size value="1"/>
     <height value="2"/>
     <max-hp value="700" regeneration="3"/>
-    <max-ep value="500" regeneration="15"/>
-    <armor value="30"/>
-    <armor-type value="leather"/>
+    <max-ep value="1500" regeneration="20"/>
+    <armor value="40"/>
+    <armor-type value="metal"/>
     <sight value="12"/>
-    <time value="75"/>
+    <time value="125"/>
     <multi-selection value="true"/>
     <cellmap value="false"/>
     <levels>
-      <level name="expert" kills="3"/>
-      <level name="master" kills="10"/>
+      <level name="expert" kills="4"/>
+      <level name="master" kills="12"/>
     </levels>
     <fields>
       <field value="land"/>
@@ -82,7 +82,7 @@
       <type value="move"/>
       <name value="move_skill"/>
       <ep-cost value="0"/>
-      <speed value="250"/>
+      <speed value="100"/>
       <anim-speed value="100"/>
       <animation path="models/silver_mage_walking.g3d"/>
       <sound enabled="false"/>
@@ -92,21 +92,21 @@
     	<type value="move"/>
     	<name value="teleport_skill"/>
     	<ep-cost value="200"/>
-    	<speed value="200"/>
+    	<speed value="100"/>
     	<anim-speed value="100"/>
     	<visible-only value="true"/>
     	<animation path="models/silver_mage_teleporting.g3d"/>
-    	<sound enabled="true" start-time="1.0">
-    		<sound-file path="sounds/anchor_action.wav"/>
-    		<sound-file path="sounds/exit.wav"/>
-    		<sound-file path="sounds/link.wav"/>
+    	<sound enabled="true" start-time="0.25">
+    		<sound-file path="sounds/anchor_action.ogg"/>
+    		<sound-file path="sounds/exit.ogg"/>
+    		<sound-file path="sounds/link.ogg"/>
     	</sound>
     </skill>
 
-<!--    <skill>
+    <skill>
       <type value="attack"/>
-      <name value="attack_skill"/>
-      <ep-cost value="40"/>
+      <name value="lightning_skill"/>
+      <ep-cost value="160"/>
       <speed value="60"/>
       <anim-speed value="60"/>
       <animation path="models/silver_mage_attacking.g3d"/>
@@ -120,18 +120,18 @@
         <sound-file path="sounds/silver_mage_attack6.wav"/>
         <sound-file path="sounds/silver_mage_attack7.wav"/>
         <sound-file path="sounds/silver_mage_attack8.wav"/>
-      </sound>
-      <attack-strenght value="140"/>
-      <attack-var value="40"/>
-      <attack-range value="7"/>
+      </sound>-->
+      <attack-strength value="160"/>
+      <attack-var value="50"/>
+      <attack-range value="8"/>
       <attack-type value="energy"/>
       <attack-fields>
         <field value="land"/>
         <field value="air"/>
       </attack-fields>
       <attack-start-time value="0.6"/>
-      <projectile value="false"/>
-<!--      <projectile value="true">
+      <!--<projectile value="false"/>-->
+      <projectile value="true">
         <particle value="true" path="particle_proj.xml"/>
         <sound enabled="false"/>
 <!--        <sound enabled="true">
@@ -139,14 +139,60 @@
           <sound-file path="sounds/silver_mage_hit2.wav"/>
           <sound-file path="sounds/silver_mage_hit3.wav"/>
           <sound-file path="sounds/silver_mage_hit4.wav"/>
-        </sound>
+        </sound>-->
       </projectile>
       <splash value="false"/>
 <!--      <splash value="true">
         <radius value="0"/>
-        <damage-all value="true"/>
+        <damage-all value="false"/>
         <particle value="true" path="particle_splash.xml"/>
-      </splash>
+      </splash>-->
+    </skill>
+    
+    <!--<skill>
+      <type value="attack"/>
+      <name value="bomb_skill"/>
+      <ep-cost value="600"/>
+      <speed value="60"/>
+      <anim-speed value="60"/>
+      <animation path="models/silver_mage_attacking.g3d"/>
+      <sound enabled="false"/>
+<!--      <sound enabled="true" start-time="0.3">
+        <sound-file path="sounds/silver_mage_attack1.wav"/>
+        <sound-file path="sounds/silver_mage_attack2.wav"/>
+        <sound-file path="sounds/silver_mage_attack3.wav"/>
+        <sound-file path="sounds/silver_mage_attack4.wav"/>
+        <sound-file path="sounds/silver_mage_attack5.wav"/>
+        <sound-file path="sounds/silver_mage_attack6.wav"/>
+        <sound-file path="sounds/silver_mage_attack7.wav"/>
+        <sound-file path="sounds/silver_mage_attack8.wav"/>
+      </sound>--
+      <attack-strength value="350"/>
+      <attack-var value="50"/>
+      <attack-range value="8"/>
+      <attack-type value="energy"/>
+      <attack-fields>
+        <field value="land"/>
+        <field value="air"/>
+      </attack-fields>
+      <attack-start-time value="0.6"/>
+      <!--<projectile value="false"/>--
+      <projectile value="true">
+        <particle value="true" path="particle_proj_bomb.xml"/>
+        <sound enabled="false"/>
+<!--        <sound enabled="true">
+          <sound-file path="sounds/silver_mage_hit1.wav"/>
+          <sound-file path="sounds/silver_mage_hit2.wav"/>
+          <sound-file path="sounds/silver_mage_hit3.wav"/>
+          <sound-file path="sounds/silver_mage_hit4.wav"/>
+        </sound>--
+      </projectile>
+      <splash value="false"/>
+<!--      <splash value="true">
+        <radius value="0"/>
+        <damage-all value="false"/>
+        <particle value="true" path="particle_splash.xml"/>
+      </splash>--
     </skill>-->
 
     <skill>
@@ -196,15 +242,25 @@
     	<move-skill value="teleport_skill"/>
     </command>
 
-<!--    <command>
+    <command>
       <type value="attack"/>
-      <name value="fire_bolt"/>
-      <image path="images/silver_mage_fire_bolt.bmp"/>
+      <name value="lightning_bolt"/>
+      <image path="images/silver_mage_lightning.bmp"/>
       <unit-requirements/>
       <upgrade-requirements/>
       <move-skill value="move_skill"/>
-      <attack-skill value="attack_skill"/>
+      <attack-skill value="lightning_skill"/>
     </command>
+    
+    <!--<command>
+    	<type value="attack"/>
+    	<name value="prismatic_bomb"/>
+    	<image path="images/silver_mage_bomb.bmp"/>
+    	<unit-requirements/>
+      	<upgrade-requirements/>
+      	<move-skill value="move_skill"/>
+      	<attack-skill value="bomb_skill"/>
+    </command>-->
 
     <command>
       <type value="patrol"/>
@@ -213,7 +269,7 @@
       <unit-requirements/>
       <upgrade-requirements/>
       <move-skill value="move_skill"/>
-      <attack-skill value="attack_skill"/>
+      <attack-skill value="lightning_skill"/>
       <max-distance value="6"/>
     </command>
 
@@ -224,7 +280,7 @@
       <unit-requirements/>
       <upgrade-requirements/>
       <move-skill value="move_skill"/>
-      <attack-skill value="attack_skill"/>
+      <attack-skill value="lightning_skill"/>
       <max-distance value="3"/>
     </command>
 
@@ -235,8 +291,8 @@
       <unit-requirements/>
       <upgrade-requirements/>
       <stop-skill value="stop_skill"/>
-      <attack-skill value="attack_skill"/>
-    </command>-->
+      <attack-skill value="lightning_skill"/>
+    </command>
 
   </commands>
 </unit>
