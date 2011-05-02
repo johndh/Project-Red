@@ -13,6 +13,8 @@
     <unit name="battlemage" amount="1"/>
     <unit name="summoner" amount="1"/>
     <unit name="daemon" amount="1"/>
+    <!-- don't forget to remove this -->
+    <unit name="silver_mage" amount="3"/>
     <unit name="archmage" amount="0"/>
     <unit name="dragon" amount="0"/>
     <unit name="tower_of_souls" amount="0"/>

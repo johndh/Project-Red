@@ -1,6 +1,6 @@
 Dwarves:
 wciow - original author, original art and assets
-The Glest Team (http://glest.org) - sounds
+The Glest team (http://glest.org) - sounds
 Kevin MacLeod - music (original score)
 Sir Modman - music (remixing)
 Archmage - additional art and assets
@@ -12,18 +12,21 @@ Elves:
 Amish Coelho aka gAMeboy - original author, original art and assets
 
 Magic:
-The Glest Team - original authors, original art and assets
+The Glest team - original authors, original art and assets
 John.d.h - Project Red art and assets
 Psychedelic Hands - Project Red art and assets
 Ogrebane (http://opengameart.org/users/ogrebane) - sounds
 Legoluft (http://legoluft.de) - http://opengameart.org/content/atmospheric-interaction
 Luke.RUSTLTD - http://www.opengameart.org/content/4-summoning-circles
+Zoythrus - particles
+The MegaGlest team - particles
 
 Tech:
-The Glest Team - original authors, original art and assets
+The Glest team - original authors, original art and assets
 Mr War - Project Red art and assets
 John.d.h - Project Red art and assets
 Nander - http://opengameart.org/content/sailing-boat
+The MegaGlest team - particles
 
 Undead:
 wciow - original author, original art and assets

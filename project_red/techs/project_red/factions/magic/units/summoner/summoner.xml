@@ -267,7 +267,7 @@
       <upgrade-requirements/>
       <morph-skill value="morph_skill"/>
       <morph-unit name= "drake_rider"/>
-      <discount value="0"/>
+      <cost-modifier value="0"/>
     </command>
 
   </commands>
