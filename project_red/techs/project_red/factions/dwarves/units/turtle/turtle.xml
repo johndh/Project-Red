@@ -2,7 +2,7 @@
 
 <unit>
 	<parameters>
-		<size value="2"/>
+		<size value="3"/>
 		<height value="4"/>
 		<max-hp value="2500" regeneration="0"/> 
 		<max-ep value="0"/>
@@ -23,12 +23,12 @@
 		</properties>
 		<light enabled="false"/>
 		<unit-requirements>
-			<unit name="warriors_hall"/>
+			<!--<unit name="warriors_hall"/>-->
 			<unit name="foundry"/>
 		</unit-requirements>
 		<upgrade-requirements>
 			<upgrade name="dwarven_steel"/>
-			<upgrade name="gunpowder"/>
+			<!--<upgrade name="gunpowder"/>-->
 		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="gold" amount="250"/>
@@ -60,13 +60,16 @@
 			<type value="move"/>
 			<name value="move_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="140"/> 
+			<speed value="180"/> 
 			<anim-speed value="115"/> 
 			<animation path="models/turtle_move.g3d"/>
 			<sound enabled="false"/>
 			<!--<sound enabled="true" start-time="0.1">
 				<sound-file path="sounds/catapult_walk1.wav"/>
 			</sound> -->
+			<!--<particles value="true">
+				<particle-file path="exhaust_particles.xml"/>
+			</particles>-->
 		</skill>
 
 		<skill>
@@ -75,7 +78,7 @@
 			<ep-cost value="0"/>
 			<speed value="50"/>
 			<anim-speed value="50"/>
-			<animation path="models/turtle.g3d"/>
+			<animation path="models/turtle_move.g3d"/>
 			<sound enabled="false"/>
 			<!--
 			<sound enabled="true" start-time="0.1">
@@ -83,7 +86,7 @@
 			</sound> -->
 			<attack-strenght value="150"/> 
 			<attack-var value="75"/>
-			<attack-range value="9"/> 
+			<attack-range value="1"/> 
 			<attack-type value="impact"/>
 			<attack-start-time value="0.7"/>
 			<attack-fields>
@@ -174,7 +177,7 @@
 
 		<command>
 			<type value="attack"/>
-			<name value="cannon_ball"/>
+			<name value="ram"/>
 			<image path="images/turtle_attack.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
@@ -206,8 +209,8 @@
 				<unit value="engineer"/>
 				<unit value="warrior"/>
 				<unit value="guardian"/>
-				<unit value="slayer"/>
-				<unit value="cannoneer"/>
+				<unit value="dragon_slayer"/>
+				<unit value="canoneer"/>
 				<unit value="pig"/>
 			</units-carried>
 			<load-capacity value="6"/>

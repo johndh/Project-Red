@@ -15,11 +15,12 @@
 		<unit name="warriors_hall" amount="0"/>
 		<unit name="warrior" amount="2"/>
 		<unit name="guardian" amount="0"/>
-		<unit name="slayer" amount="0"/>
+		<unit name="dragon_slayer" amount="0"/>
 		<unit name="rhinox_pen" amount="0"/>
 		<unit name="outrider" amount="0"/>
-		<unit name="foundry" amount="0"/>
-		<unit name="cannoneer" amount="1"/>
+		<!-- remember to remove this -->
+		<unit name="foundry" amount="1"/>
+		<unit name="canoneer" amount="1"/>
 		<unit name="engineer" amount="0"/>
 		<unit name="flame_team" amount="0"/>
 		<unit name="defense_tower" amount="1"/>
