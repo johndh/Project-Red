@@ -156,7 +156,7 @@
       <speed value="60"/>
       <anim-speed value="60"/>
       <animation path="models/silver_mage_attacking.g3d"/>
-      <sound enabled="false"/>
+      <sound enabled="false"/> -->
 <!--      <sound enabled="true" start-time="0.3">
         <sound-file path="sounds/silver_mage_attack1.wav"/>
         <sound-file path="sounds/silver_mage_attack2.wav"/>
@@ -166,7 +166,7 @@
         <sound-file path="sounds/silver_mage_attack6.wav"/>
         <sound-file path="sounds/silver_mage_attack7.wav"/>
         <sound-file path="sounds/silver_mage_attack8.wav"/>
-      </sound>--
+      </sound>
       <attack-strength value="350"/>
       <attack-var value="50"/>
       <attack-range value="8"/>
@@ -176,23 +176,23 @@
         <field value="air"/>
       </attack-fields>
       <attack-start-time value="0.6"/>
-      <!--<projectile value="false"/>--
+      <projectile value="false"/>
       <projectile value="true">
         <particle value="true" path="particle_proj_bomb.xml"/>
-        <sound enabled="false"/>
+        <sound enabled="false"/> -->
 <!--        <sound enabled="true">
           <sound-file path="sounds/silver_mage_hit1.wav"/>
           <sound-file path="sounds/silver_mage_hit2.wav"/>
           <sound-file path="sounds/silver_mage_hit3.wav"/>
           <sound-file path="sounds/silver_mage_hit4.wav"/>
-        </sound>--
+        </sound>
       </projectile>
-      <splash value="false"/>
+      <splash value="false"/> -->
 <!--      <splash value="true">
         <radius value="0"/>
         <damage-all value="false"/>
         <particle value="true" path="particle_splash.xml"/>
-      </splash>--
+      </splash>
     </skill>-->
 
     <skill>
