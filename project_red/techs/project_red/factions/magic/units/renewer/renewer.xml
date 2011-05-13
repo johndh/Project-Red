@@ -151,18 +151,30 @@
     <skill>
       <type value="cast-spell" />
       <name value="heal_skill" />
-      <ep-cost value="40" />
+      <ep-cost value="100" />
       <speed value="60" />
       <anim-speed value="60" />
       <animation path="models/renewer_casting.g3d" />
       <sound enabled="false" />
+      <start-time value="0.5"/>
       <effects>
-	      <effect name="healing_light" bias="beneficial" stacking="overwrite" duration="5">
+	      <effect name="healing_light" bias="beneficial" stacking="extend" duration="5">
 		      	<static-modifiers>
 		      		<hp-regeneration value="20"/>
 		      	</static-modifiers>
+		      	<!--<particles value="true">
+		      		<particle-file path="healing_light_particles.xml"/>
+		      	</particles>-->
 	      </effect>
-      </effects>
+      </effects>	      
+      <projectile value="false"/>
+      	<!--	<particle value="true" path="healing_light_particles.xml"/>
+      		<sound enabled="false"/>
+      	</projectile>-->
+      	<splash value="true">
+      		<radius value="3"/>
+      		<particle value="true" path="healing_light_particles.xml"/>
+      	</splash>
     </skill>
 
   </skills>
@@ -231,12 +243,13 @@
     
     <command>
        <type value="cast-spell"/>
-       <name value="heal"/>
+       <name value="healing_light"/>
        <image path="images/healing_light.bmp"/>
        <unit-requirements/>
        <upgrade-requirements/>
-           <affect value="self"/>
        <cast-spell-skill value="heal_skill"/>
+       <affect value="target"/>
+       <cycle value="true"/>
     </command>
 
   </commands>
