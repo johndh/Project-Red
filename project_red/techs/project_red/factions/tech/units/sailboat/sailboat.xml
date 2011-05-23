@@ -117,8 +117,8 @@
       <type value="die"/>
       <name value="die_skill"/>
       <ep-cost value="0"/>
-      <speed value="120"/>
-      <anim-speed value="120"/>
+      <speed value="40"/>
+      <anim-speed value="40"/>
       <animation path="models/sailboat_dying.g3d"/>
       <sound enabled="false"/>
       <!--<sound enabled="true" start-time="0.1">
