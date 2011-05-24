@@ -209,7 +209,7 @@
       <upgrade-requirements/>
       <morph-skill value="morph_skill"/>
       <morph-unit name= "guard"/>
-      <discount value="60"/>
+      <cost-modifer value="60"/>
     </command>
 
   </commands>

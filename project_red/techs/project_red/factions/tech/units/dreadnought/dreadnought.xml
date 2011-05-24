@@ -22,27 +22,25 @@
 		<light enabled="false"/>
 		<unit-requirements>
 			<unit name="castle"/>
-		</unit-requirements>
-							
+			<unit name="technodrome"/>
+		</unit-requirements>							
 		<upgrade-requirements>							
 			<upgrade name="robotics"/>						
 		</upgrade-requirements>
-		
 		<resource-requirements>
 			<resource name="wood" amount="100"/>
 			<resource name="gold" amount="250"/>
-			<resource name="food" amount="1"/>
-			<resource name="energy" amount="1"/>				
+			<resource name="food" amount="3"/>				
 		</resource-requirements>
 		<resources-stored/>
-		<image path="images/unit_archer.bmp"/>
-		<image-cancel path="images/tech_cancel.bmp"/>
+		<image path="images/dreadnought.bmp"/>
+		<image-cancel path="../archer/images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="sounds/guard_select1.wav"/>					
+			<sound path="../guard/sounds/guard_select1.wav"/>					
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="sounds/guard_ack1.wav"/>					
+			<sound path="../guard/sounds/guard_ack1.wav"/>					
 		</command-sounds>
 	</parameters>
 
@@ -56,11 +54,8 @@
 			<anim-speed value="25"/>
 			<animation path="models/dreadnought.g3d"/>
 			<particles value="true">
-				
 				<particle-file path="smoke_particles.xml"/>
-
 				<particle-file path="smoke_particles2.xml"/>
-
 			</particles>
 			<sound enabled="false"/>
 		</skill>
@@ -73,24 +68,21 @@
 			<anim-speed value="150"/>
 			<animation path="models/dreadnought_move.g3d"/>
 			<particles value="true">
-				
 				<particle-file path="smoke_particles.xml"/>
-
 				<particle-file path="smoke_particles2.xml"/>
-				
 			</particles>
 			<sound enabled="false"/>
 			<sound enabled="true" start-time="0.6">
-				<sound-file path="sounds/catapult_walk1.wav"/>
-				<sound-file path="sounds/catapult_walk2.wav"/>
-				<sound-file path="sounds/catapult_walk3.wav"/>
-				<sound-file path="sounds/catapult_walk4.wav"/>
-				<sound-file path="sounds/catapult_walk5.wav"/>
-				<sound-file path="sounds/catapult_walk6.wav"/>
+				<sound-file path="../catapult/sounds/catapult_walk1.wav"/>
+				<sound-file path="../catapult/sounds/catapult_walk2.wav"/>
+				<sound-file path="../catapult/sounds/catapult_walk3.wav"/>
+				<sound-file path="../catapult/sounds/catapult_walk4.wav"/>
+				<sound-file path="../catapult/sounds/catapult_walk5.wav"/>
+				<sound-file path="../catapult/sounds/catapult_walk6.wav"/>
 			</sound>
 		</skill>
 
-		<skill>
+		<!--<skill>
 			<type value="move"/>
 			<name value="charge_skill"/>		
 			<ep-cost value="0"/>
@@ -98,15 +90,11 @@
 			<anim-speed value="220"/>
 			<animation path="models/dreadnought_move.g3d"/>
 			<particles value="true">
-				
 				<particle-file path="smoke_particles.xml"/>
-
 				<particle-file path="smoke_particles2.xml"/>
-	
 			</particles>
-			
 			<sound enabled="false"/>
-		</skill>
+		</skill>-->
 
 		<skill>
 			<type value="attack"/>
@@ -118,17 +106,14 @@
 			<particles value="true">
 				<particle-file path="cannonsmoke_particles.xml"/>
 				<particle-file path="smoke_particles.xml"/>
-
 				<particle-file path="smoke_particles2.xml"/>
-
 			</particles>			
-		
 			<sound enabled="true" start-time="0.2">
-				<sound-file path="sounds/airship_attack1.wav"/>					
+				<sound-file path="../airship/sounds/airship_attack1.wav"/>					
 			</sound>
 			<attack-strenght value="300"/>				
 			<attack-var value="150"/>				
-			<attack-range value="8"/>				
+			<attack-range value="14"/>				
 			<attack-type value="piercing"/>
 			<attack-start-time value="0.2"/>
 			<attack-fields>
@@ -136,9 +121,8 @@
 			</attack-fields>
 			<projectile value="true">				
 				<particle value="true" path="particle_proj.xml"/>
-					
 				<sound enabled="true">
-					<sound-file path="sounds/airship_hit.wav"/>	
+					<sound-file path="../airship/sounds/airship_hit.wav"/>	
 				</sound>
 			</projectile>
 			<splash value="true">				
@@ -160,7 +144,7 @@
 				<particle-file path="die_glow_particles.xml"/>									
 			</particles>
 			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/catapult_die3.wav"/>
+				<sound-file path="../catapult/sounds/catapult_die3.wav"/>
 			</sound>			
 			<fade value="false"/>
 		</skill>
@@ -175,7 +159,7 @@
 		<command>
 			<type value= "stop"/>
 			<name value="stop"/>
-			<image path="images/tech_halt.bmp"/>
+			<image path="../archer/images/tech_stop.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
@@ -184,7 +168,7 @@
 		<command>
 			<type value="move"/>
 			<name value="move"/>
-			<image path="images/tech_move.bmp"/>
+			<image path="../archer/images/tech_move.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
@@ -193,24 +177,44 @@
 		<command>
 			<type value="attack"/>
 			<name value="attack"/>
-			<image path="images/tech_shot.bmp"/>
+			<image path="../catapult/images/catapult_attack.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
-			<move-skill value="charge_skill"/>
+			<move-skill value="move_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
 		
 		<command>
-			<type value="attack_stopped"/>
-			<name value="hold_position"/>
-			<image path="images/tech_hold.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements>
-				
-			</upgrade-requirements>
-			<stop-skill value="stop_skill"/>
-			<attack-skill value="attack_skill"/>
-		</command>
+		      <type value="patrol"/>
+		      <name value="patrol"/>
+		      <image path="../archer/images/tech_patrol.bmp"/>
+		      <unit-requirements/>
+		      <upgrade-requirements/>
+		      <move-skill value="move_skill"/>
+		      <attack-skill value="attack_skill"/>
+		      <max-distance value="6"/>
+		    </command>
+
+		    <command>
+		      <type value="guard"/>
+		      <name value="guard"/>
+		      <image path="../archer/images/tech_guard.bmp"/>
+		      <unit-requirements/>
+		      <upgrade-requirements/>
+		      <move-skill value="move_skill"/>
+		      <attack-skill value="attack_skill"/>
+		      <max-distance value="3"/>
+		    </command>
+
+		    <command>
+		      <type value="attack_stopped"/>
+		      <name value="hold_position"/>
+		      <image path="../archer/images/tech_hold.bmp"/>
+		      <unit-requirements/>
+		      <upgrade-requirements/>
+		      <stop-skill value="stop_skill"/>
+		      <attack-skill value="attack_skill"/>
+		    </command>
 		
 	</commands>
 </unit>

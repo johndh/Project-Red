@@ -40,6 +40,9 @@
     <command-sounds enabled="true">
       <sound path="../barracks/sounds/tech_click.wav"/>
     </command-sounds>
+    <detector value="true" type="permanent">
+    	<image path="/images/detector.bmp"/>
+    </detector>
   </parameters>
 
   <skills>

@@ -127,6 +127,26 @@
       <produce-skill value="produce_skill"/>
       <produced-unit name="transport_ship"/>
     </command>
+    
+    <command>
+      <type value="produce"/>
+      <name value="build_man_of_war" tip="man_of_war_info"/>
+      <image path="../man_of_war/images/man_of_war.bmp"/>
+      <unit-requirements />
+      <upgrade-requirements />
+      <produce-skill value="produce_skill"/>
+      <produced-unit name="man_of_war"/>
+    </command>
+    
+    <command>
+      <type value="produce"/>
+      <name value="build_dreadnought" tip="dreadnought_info"/>
+      <image path="../dreadnought/images/dreadnought.bmp"/>
+      <unit-requirements />
+      <upgrade-requirements />
+      <produce-skill value="produce_skill"/>
+      <produced-unit name="dreadnought"/>
+    </command>
 
     <!--<command>
       <type value="upgrade"/>
