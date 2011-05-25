@@ -178,7 +178,7 @@
 		<command>
 			<type value="attack"/>
 			<name value="ram"/>
-			<image path="images/turtle_attack.bmp"/>
+			<image path="../worker/images/dattack.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>

@@ -148,7 +148,7 @@
 		<command>
 			<type value="attack"/>
 			<name value="cannon_ball"/>
-			<image path="images/catapult_attack.bmp"/>
+			<image path="../worker/images/dattack.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
