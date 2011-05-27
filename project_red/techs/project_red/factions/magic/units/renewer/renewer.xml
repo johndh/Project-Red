@@ -71,7 +71,7 @@
       <name value="stop_skill"/>
       <ep-cost value="0"/>
       <speed value="1000"/>
-      <anim-speed value="40"/>
+      <anim-speed value="60"/>
       <animation path="models/renewer_standing.g3d"/>
       <sound enabled="false"/>
     </skill>
@@ -80,8 +80,8 @@
       <type value="move"/>
       <name value="move_skill"/>
       <ep-cost value="0"/>
-      <speed value="250"/>
-      <anim-speed value="100"/>
+      <speed value="190"/>
+      <anim-speed value="75"/>
       <animation path="models/renewer_walking.g3d"/>
       <sound enabled="false"/>
     </skill>
@@ -94,7 +94,7 @@
       <anim-speed value="60"/>
       <animation path="models/renewer_attacking.g3d"/>
       <sound enabled="false"/> -->
-<!--      <sound enabled="true" start-time="0.3">
+<!--      <sound enabled="true" start-time="0.6">
         <sound-file path="sounds/renewer_attack1.wav"/>
         <sound-file path="sounds/renewer_attack2.wav"/>
         <sound-file path="sounds/renewer_attack3.wav"/>
@@ -136,8 +136,8 @@
       <type value="die"/>
       <name value="die_skill"/>
       <ep-cost value="0"/>
-      <speed value="120"/>
-      <anim-speed value="50"/>
+      <speed value="60"/>
+      <anim-speed value="60"/>
       <animation path="models/renewer_dying.g3d"/>
       <sound enabled="false"/>
 <!--      <sound enabled="true" start-time="0">
@@ -152,11 +152,11 @@
       <type value="cast-spell" />
       <name value="heal_skill" />
       <ep-cost value="100" />
-      <speed value="60" />
-      <anim-speed value="60" />
+      <speed value="75" />
+      <anim-speed value="75" />
       <animation path="models/renewer_casting.g3d" />
       <sound enabled="false" />
-      <start-time value="0.5"/>
+      <start-time value="0.75"/>
       <effects>
 	      <effect name="healing_light" bias="beneficial" stacking="extend" duration="5">
 		      	<static-modifiers>

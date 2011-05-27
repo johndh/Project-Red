@@ -20,6 +20,7 @@ Legoluft (http://legoluft.de) - http://opengameart.org/content/atmospheric-inter
 Luke.RUSTLTD - http://www.opengameart.org/content/4-summoning-circles
 Zoythrus - particles
 The MegaGlest team - particles
+Archmage - Renewer animations
 
 Tech:
 The Glest team - original authors, original art and assets

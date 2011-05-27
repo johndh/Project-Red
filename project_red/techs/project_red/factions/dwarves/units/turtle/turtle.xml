@@ -36,7 +36,7 @@
 			<resource name="food" amount="2"/>
 		</resource-requirements>
 		<resources-stored/>
-		<image path="images/turtle.bmp"/>
+		<image path="images/turtle.png"/>
 		<image-cancel path="../worker/images/dstop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="false" />
