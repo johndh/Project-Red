@@ -37,7 +37,7 @@
 		</resource-requirements>
 		<resources-stored />
 		<image path="images/dfarm.bmp"/>
-		<image-cancel path="../stronghold/images/dstop.bmp"/>
+		<image-cancel path="../worker/images/dstop.bmp"/>
 		<meeting-point value="true" image-path="../stronghold/images/dmeeting.bmp"/>
 		<selection-sounds enabled="false"/>
 		<command-sounds enabled="false"/>

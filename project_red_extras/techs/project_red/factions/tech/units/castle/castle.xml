@@ -95,6 +95,28 @@
       </sound>
       <fade value="false"/>
     </skill>
+    
+    <skill>
+	<type value="load"/>
+	<name value="load_skill"/>
+	<ep-cost value="0"/>
+	<speed value="300"/>
+	<anim-speed value="100"/>
+	<animation path="models/castle.g3d"/>
+	<sound enabled="false"/>
+	<max-range value="3"/>
+    </skill>
+		
+    <skill>
+	<type value="unload"/>
+	<name value="unload_skill"/>
+	<ep-cost value="0"/>
+	<speed value="300"/>
+	<anim-speed value="100"/>
+	<animation path="models/castle.g3d"/>
+	<sound enabled="false"/>
+	<max-range value="3"/>
+    </skill>
 
   </skills>
 
@@ -109,6 +131,32 @@
       <upgrade-requirements />
       <produce-skill value="produce_skill"/>
       <produced-unit name="worker"/>
+    </command>
+    
+    <command>
+	<type value="load"/>
+	<name value="load"/>
+	<image path="images/castle_load.bmp"/>
+	<unit-requirements/>
+	<upgrade-requirements/>
+	<load-skill value="load_skill"/>
+	<units-carried>
+		<unit value="worker"/>
+		<unit value="archer"/>
+		<unit value="swordman"/>
+		<unit value="guard"/>
+		<unit value="technician"/>
+	</units-carried>
+	<load-capacity value="20"/>
+    </command>
+		
+    <command>
+	<type value="unload"/>
+	<name value="unload"/>
+	<image path="images/castle_unload.bmp"/>
+	<unit-requirements/>
+	<upgrade-requirements/>
+	<unload-skill value="unload_skill"/>
     </command>
 
   </commands>

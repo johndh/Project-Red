@@ -18,14 +18,12 @@
 		<unit name="dragon_slayer" amount="0"/>
 		<unit name="rhinox_pen" amount="0"/>
 		<unit name="outrider" amount="0"/>
-		<!-- remember to remove this -->
-		<unit name="foundry" amount="1"/>
+		<unit name="foundry" amount="0"/>
 		<unit name="canoneer" amount="1"/>
 		<unit name="engineer" amount="0"/>
 		<unit name="flame_team" amount="0"/>
 		<unit name="defense_tower" amount="1"/>
 		<unit name="bombard" amount="0"/>
-<!--		<unit name="skyship" amount="0"/>-->
 		<unit name="pig" amount="2"/>
 	</starting-units>	
 	<music value="true" path="music/dwarf.ogg"/>

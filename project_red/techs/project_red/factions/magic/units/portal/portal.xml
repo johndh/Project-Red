@@ -3,12 +3,12 @@
   <!-- *** parameters *** -->
   <parameters>
     <size value="2"/>
-    <height value="11" />
-    <max-hp value="10000" regeneration="0"/>
+    <height value="2" />
+    <max-hp value="5000" regeneration="0"/>
     <max-ep value="0" />
     <armor value="0" />
     <armor-type value="stone"/>
-    <sight value="15" />
+    <sight value="5" />
     <time value="250" />
     <multi-selection value="false" />
     <cellmap value="false"/>
@@ -64,7 +64,7 @@
       <sound enabled="false"/>
     </skill>
 
-    <skill>
+    <!--<skill>
       <type value="upgrade"/>
       <name value="upgrade_skill"/>
       <ep-cost value="0" />
@@ -72,7 +72,7 @@
       <anim-speed value="300" />
       <animation path="models/portal.g3d" />
       <sound enabled="false"/>
-    </skill>
+    </skill>-->
 
     <skill>
       <type value="die"/>
@@ -91,9 +91,9 @@
 	<type value="load"/>
 	<name value="load_skill"/>
 	<ep-cost value="0"/>
-	<speed value="100"/>
+	<speed value="300"/>
 	<anim-speed value="100"/>
-	<animation path="models/portal_load.g3d"/>
+	<animation path="models/portal.g3d"/>
 	<sound enabled="true" start-time="0.5">
 		<sound-file path="sounds/ghost.wav"/>
 	</sound>
@@ -104,9 +104,9 @@
 	<type value="unload"/>
 	<name value="unload_skill"/>
 	<ep-cost value="0"/>
-	<speed value="100"/>
+	<speed value="300"/>
 	<anim-speed value="100"/>
-	<animation path="models/portal_unload.g3d"/>
+	<animation path="models/portal.g3d"/>
 	<sound enabled="true" start-time="0.5">
 		<sound-file path="sounds/teleport.wav"/>
 	</sound>
@@ -134,16 +134,16 @@
 		<unit value="drake_rider"/>
 		<unit value="archmage"/>
 	</units-carried>
-		<load-capacity value="12"/>
+	<load-capacity value="12"/>
     </command>
 		
     <command>
-		<type value="unload"/>
-		<name value="unload"/>
-		<image path="images/portal_unload.bmp"/>
-		<unit-requirements/>
-		<upgrade-requirements/>
-		<unload-skill value="unload_skill"/>
+	<type value="unload"/>
+	<name value="unload"/>
+	<image path="images/portal_unload.bmp"/>
+	<unit-requirements/>
+	<upgrade-requirements/>
+	<unload-skill value="unload_skill"/>
     </command>
   </commands>
 </unit>
