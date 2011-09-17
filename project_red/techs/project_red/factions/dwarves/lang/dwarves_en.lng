@@ -1,0 +1,81 @@
+;
+; Unit names and tips
+;
+bombard=Bombard
+bombard_info=
+canoneer=Cannoneer
+canoneer_info=
+defense_tower=
+defense_tower_info=
+dragon_slayer=Slayer
+dragon_slayer_info=
+engineer=Engineer
+engineer_info=
+farm=Farm
+farm_info=
+flame_team=Flame Team
+flame_team_info=
+foundry=Foundry
+foundry_info=
+guardian=Guardian
+guardian_info=
+miner=Miner
+miner_info=
+observation_balloon=Observation Balloon
+obversvation_balloon_info=
+outrider=Outrider
+outrider_info=
+pig=Pig
+pig_info=
+rhinox_pen=Rhinox Pen
+rhinox_pen_info=
+stronghold=Stronghold
+stronghold_info=
+turtle=Turtle
+turtle_info=
+warrior=Warrior
+warrior_info=
+warriors_hall=Warriors' Hall
+warriors_hall_info=
+worker=Worker
+worker_info=
+
+;
+; Upgrade names and tips
+;
+
+dwarven_iron=Dwarven Iron
+dwarven_iron_info=
+dwarven_steel=Dwarven Steel
+dwarven_steel_info=
+fortify=Fortify
+fortify_info=
+gunpowder=Gunpowder
+gunpowder_info=
+heroic_valour=Heroic Valour
+heroic_valour_info=
+scale_armour=Scale Armour
+scale_armour_info=
+
+;
+; Custom command names
+;
+
+hold_position=Hold Position
+mine=Mine
+attack_off=Attack Off
+attack_on=Attack On
+
+build_specific=Build %s
+
+
+;
+; Level names
+;
+
+elite=Elite
+sharpeye=Sharpeye
+dragonbane=Dragonbane
+hotshot=Hotshot
+master=Master
+killer=Killer

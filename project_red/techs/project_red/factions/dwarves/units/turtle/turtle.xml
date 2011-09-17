@@ -12,9 +12,7 @@
 		<time value="100"/>	
 		<multi-selection value="true"/>	
    		<cellmap value="false" />
-		<levels>
-			<level name="elite" kills="10"/>
-		</levels>
+		<levels/>
 		<fields>
 			<field value="amphibious"/>
 		</fields>	
