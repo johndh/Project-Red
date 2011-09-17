@@ -75,14 +75,14 @@
     </skill>-->
 
     <skill>
-      <type value="die"/>
+      <type value="die" />
       <name value="die_skill"/>
-      <ep-cost value="0"/>
-      <speed value="300"/>
-      <anim-speed value="300"/>
-      <animation path="../mage_tower/destruction_models/portal_destruction.g3d"/>
+      <ep-cost value="0" />
+      <speed value="300" />
+      <anim-speed value="300" />
+      <animation path="../mage_tower/destruction_models/energy_source_destruction.g3d" />
       <sound enabled="true" start-time="0">
-        <sound-file path="../archmage_tower/sounds/magic_building_fall6.wav"/>
+        <sound-file path="../archmage_tower/sounds/magic_building_fall1.wav"/>
       </sound>
       <fade value="false"/>
     </skill>
@@ -127,6 +127,7 @@
 	<units-carried>
 		<unit value="initiate"/>
 		<unit value="battlemage"/>
+		<unit value="renewer"/>
 		<unit value="daemon"/>
 		<unit value="ghost_armor"/>
 		<unit value="behemoth"/>
