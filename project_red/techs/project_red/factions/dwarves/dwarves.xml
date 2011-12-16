@@ -24,7 +24,7 @@
 		<unit name="flame_team" amount="0"/>
 		<unit name="defense_tower" amount="1"/>
 		<unit name="bombard" amount="0"/>
-		<unit name="pig" amount="2"/>
+		<unit name="goat" amount="2"/>
 	</starting-units>	
 	<music value="true" path="music/dwarf.ogg"/>
 </faction>

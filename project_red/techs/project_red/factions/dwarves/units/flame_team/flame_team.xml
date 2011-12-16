@@ -31,10 +31,7 @@
     <levels>
       <level name="hotshot" kills="10" />
     </levels>
-    <cellmap value="true">
-      <row value="11" />
-      <row value="11" />
-    </cellmap>
+    <cellmap value="false" />
     <selection-sounds enabled="true">
       <sound path="/sounds/golem_select1.wav" />
     </selection-sounds>

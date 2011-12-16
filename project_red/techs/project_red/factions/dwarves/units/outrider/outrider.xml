@@ -20,7 +20,7 @@
     <resource-requirements>
       <resource name="gold" amount="200" />
       <resource name="wood" amount="100" />
-      <resource name="food" amount="3"/> <!-- ADICIONADO !!! NÃO TINHA NENHUM!!! -->
+      <resource name="food" amount="3"/>
     </resource-requirements>
     <resources-stored />
     <properties />
@@ -70,7 +70,15 @@
       <anim-speed value="100" />
       <animation path="models/outrider_attack.g3d" />
       <sound enabled="true" start-time="0.4">
-        <sound-file path="sounds/horseman_attack1.wav" />
+<!--        <sound-file path="sounds/horseman_attack1.wav" />-->
+		<sound-file path="sounds/behemoth_attack1a.wav" />
+		<sound-file path="sounds/behemoth_attack1b.wav" />
+		<sound-file path="sounds/behemoth_attack1c.wav" />
+		<sound-file path="sounds/behemoth_attack1d.wav" />
+		<sound-file path="sounds/behemoth_attack1e.wav" />
+		<sound-file path="sounds/behemoth_attack1f.wav" />
+		<sound-file path="sounds/behemoth_attack1g.wav" />
+		<sound-file path="sounds/behemoth_attack1h.wav" />
       </sound>
       <attack-strenght value="140" />
       <attack-var value="40" />

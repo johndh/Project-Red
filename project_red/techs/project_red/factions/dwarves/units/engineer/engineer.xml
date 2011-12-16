@@ -25,9 +25,7 @@
       <field value="land" />
     </fields>
     <levels />
-    <cellmap value="true">
-      <row value="1" />
-    </cellmap>
+    <cellmap value="false"/>
     <selection-sounds enabled="true">
       <sound path="sounds/technician_select1.wav" />
     </selection-sounds>

@@ -209,7 +209,7 @@
 				<unit value="guardian"/>
 				<unit value="dragon_slayer"/>
 				<unit value="canoneer"/>
-				<unit value="pig"/>
+				<unit value="goat"/>
 			</units-carried>
 			<load-capacity value="6"/>
 			<allow-projectiles value="true">

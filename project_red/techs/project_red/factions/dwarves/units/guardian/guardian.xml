@@ -1,133 +1,134 @@
 <unit>
-  <parameters>
-    <image path="images/guardian.bmp" />
-    <image-cancel path="../worker/images/dstop.bmp" />
-    <time value="80" />
-    <size value="1" />
-    <height value="2" />
-    <sight value="10" />
-    <max-hp value="1000" regeneration="0" /> <!-- EDITADO!  TIREI 200 E TIREI REGEN -->
-    <max-ep value="0" />
-    <armor-type value="metal" />
-    <armor value="30" />
-    <multi-selection value="true" />
-    <meeting-point value="false" />
-    <light enabled="false" />
-    <unit-requirements />
-    <upgrade-requirements>
-      <upgrade name="heroic_valour" />
-    </upgrade-requirements>
-    <resource-requirements>
-      <resource name="gold" amount="150" /> 
-      <resource name="wood" amount="70" /> 
-<!-- REMOVIDO wood=50 -->
-      <resource name="food" amount="2" />
-    </resource-requirements>
-    <resources-stored />
-    <properties />
-    <fields>
-      <field value="land" />
-    </fields>
-    <levels>
-	<level name="master" kills="6"/> <!-- ADICIONEI -->
-    </levels>
-    <cellmap value="true">
-      <row value="1" />
-    </cellmap>
-    <selection-sounds enabled="true">
-      <sound path="sounds/worker_select1.wav" />
-      <sound path="sounds/worker_select2.wav" />
-      <sound path="sounds/worker_select3.wav" />
-      <sound path="sounds/worker_select4.wav" />
-    </selection-sounds>
-    <command-sounds enabled="true">
-      <sound path="sounds/worker_ack1.wav" />
-      <sound path="sounds/worker_ack2.wav" />
-      <sound path="sounds/worker_ack3.wav" />
-      <sound path="sounds/worker_ack4.wav" />
-      <sound path="sounds/worker_ack5.wav" />
-      <sound path="sounds/worker_ack6.wav" />
-      <sound path="sounds/worker_ack7.wav" />
-    </command-sounds>
-  </parameters>
-  <skills>
-    <skill>
-      <name value="stop_skill" />
-      <type value="stop" />
-      <ep-cost value="0" />
-      <speed value="1000" />
-      <anim-speed value="55" />
-      <animation path="models/guardian_idle.g3d" />
-      <sound enabled="false" />
-    </skill>
-    <skill>
-      <name value="move_skill" />
-      <type value="move" />
-      <ep-cost value="0" />
-      <speed value="180" />
-      <anim-speed value="130" />
-      <animation path="models/guardian_walk.g3d" />
-      <sound enabled="false" />
-    </skill>
-    <skill>
-      <name value="die_skill" />
-      <type value="die" />
-      <ep-cost value="0" />
-      <speed value="90" />
-      <anim-speed value="90" />
-      <animation path="models/guardian_die.g3d" />
-      <sound enabled="true" start-time="0">
-        <sound-file path="sounds/worker_die1.wav" />
-        <sound-file path="sounds/worker_die2.wav" />
-        <sound-file path="sounds/worker_die3.wav" />
-      </sound>
-	  <fade value="false"/>
-    </skill>
-    <skill>
-      <name value="attack_skill" />
-      <type value="attack" />
-      <ep-cost value="0" />
-      <speed value="100" />
-      <anim-speed value="100" />
-      <animation path="models/guardian_attack.g3d" />
-      <sound enabled="false" />
-      <attack-strenght value="120" /> <!-- EDITADO! TIREI 10 PORQUE A ALTERAÇÃO DO TIPO DE ATAQUE ABAIXO É MAIS PODEROSA -->
-      <attack-var value="30" />
-      <attack-range value="1" />
-      <attack-type value="impact" /> 
-      <attack-start-time value="0" />
-      <attack-fields>
-        <field value="land" />
-      </attack-fields>
-      <projectile value="false" />
-      <splash value="false" />
-    </skill>
-  </skills>
-  <commands>
-    <command>
-      <name value="stop" />
-      <type value="stop" />
-      <image path="../worker/images/dstop.bmp" />
-      <unit-requirements />
-      <upgrade-requirements />
-      <stop-skill value="stop_skill" />
-    </command>
-    <command>
-      <name value="move" />
-      <type value="move" />
-      <image path="../worker/images/dmove.bmp" />
-      <unit-requirements />
-      <upgrade-requirements />
-      <move-skill value="move_skill" />
-    </command>
-    <command>
-      <name value="attack" />
-      <type value="attack" />
-      <image path="../worker/images/attack.bmp" />
-      <unit-requirements />
-      <upgrade-requirements />
-      <move-skill value="move_skill" />
-      <attack-skill value="attack_skill" />
-    </command>
-  </commands>
+
+	<parameters>
+		<image path="images/guardian.bmp" />
+		<image-cancel path="../worker/images/dstop.bmp" />
+		<time value="80" />
+		<size value="1" />
+		<height value="2" />
+		<sight value="10" />
+	    	<max-hp value="1000" regeneration="0" />
+		<max-ep value="0" />
+		<armor-type value="metal" />
+	    	<armor value="30" />
+		<multi-selection value="true" />
+		<meeting-point value="false" />
+		<light enabled="false" />
+	    	<unit-requirements />
+		<upgrade-requirements>
+	      		<upgrade name="heroic_valour" />
+		</upgrade-requirements>
+		<resource-requirements>
+			<resource name="gold" amount="150" /> 
+			<resource name="wood" amount="50" /> <!-- Tirei 20 --> 
+			<resource name="food" amount="1" /> <!-- Tirei 1 -->
+		</resource-requirements>
+		<resources-stored />
+		<properties />
+		<fields>
+	      		<field value="land" />
+		</fields>
+		<levels>
+			<level name="master" kills="5"/> <!-- Tirei 1 -->
+		</levels>
+		<cellmap value="false" />
+		<selection-sounds enabled="true">
+			<sound path="sounds/worker_select1.wav" />
+			<sound path="sounds/worker_select2.wav" />
+			<sound path="sounds/worker_select3.wav" />
+	      		<sound path="sounds/worker_select4.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/worker_ack1.wav" />
+			<sound path="sounds/worker_ack2.wav" />
+			<sound path="sounds/worker_ack3.wav" />
+	      		<sound path="sounds/worker_ack4.wav" />
+			<sound path="sounds/worker_ack5.wav" />
+	      		<sound path="sounds/worker_ack6.wav" />
+			<sound path="sounds/worker_ack7.wav" />
+		</command-sounds>
+	</parameters>
+
+	<skills>
+		<skill>
+			<name value="stop_skill" />
+			<type value="stop" />
+			<ep-cost value="0" />
+			<speed value="1000" />
+			<anim-speed value="55" />
+			<animation path="models/guardian_idle.g3d" />
+			<sound enabled="false" />
+		</skill>
+		<skill>
+			<name value="move_skill" />
+			<type value="move" />
+			<ep-cost value="0" />
+			<speed value="180" />
+      			<anim-speed value="130" />
+			<animation path="models/guardian_walk.g3d" />
+			<sound enabled="false" />
+		</skill>
+		<skill>
+			<name value="attack_skill" />
+			<type value="attack" />
+			<ep-cost value="0" />
+			<speed value="100" />
+			<anim-speed value="100" />
+			<animation path="models/guardian_attack.g3d" />
+			<sound enabled="false" />
+			<attack-strenght value="130" /> <!-- Adicionei 10 -->
+			<attack-var value="30" />
+			<attack-range value="1" />
+			<attack-type value="impact" /> 
+			<attack-start-time value="0" />
+			<attack-fields>
+				<field value="land" />
+			</attack-fields>
+			<projectile value="false" />
+			<splash value="false" />
+		</skill>
+		<skill>
+			<name value="die_skill" />
+			<type value="die" />
+			<ep-cost value="0" />
+			<speed value="90" />
+			<anim-speed value="90" />
+			<animation path="models/guardian_die.g3d" />
+      			<sound enabled="true" start-time="0">
+		        	<sound-file path="sounds/worker_die1.wav" />
+		        	<sound-file path="sounds/worker_die2.wav" />
+		        	<sound-file path="sounds/worker_die3.wav" />
+			</sound>
+			<fade value="false"/>
+		</skill>
+	</skills>
+
+	<commands>
+    		<command>
+		      <name value="stop" />
+		      <type value="stop" />
+		      <image path="../worker/images/dstop.bmp" />
+		      <unit-requirements />
+		      <upgrade-requirements />
+		      <stop-skill value="stop_skill" />
+		</command>
+		<command>
+		      <name value="move" />
+		      <type value="move" />
+		      <image path="../worker/images/dmove.bmp" />
+		      <unit-requirements />
+		      <upgrade-requirements />
+		      <move-skill value="move_skill" />
+		</command>
+		<command>
+		      <name value="attack" />
+		      <type value="attack" />
+		      <image path="../worker/images/attack.bmp" />
+		      <unit-requirements />
+		      <upgrade-requirements />
+		      <move-skill value="move_skill" />
+		      <attack-skill value="attack_skill" />
+		</command>
+	</commands>
+
 </unit>

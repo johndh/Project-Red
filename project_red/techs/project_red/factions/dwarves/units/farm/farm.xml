@@ -33,12 +33,14 @@
 			<resource name="gold" amount="100"/>
 			<resource name="stone" amount="100"/> 
 			<resource name="wood" amount="100"/> 
-			<resource name="food" amount="-20"/> 
+			<resource name="food" amount="-15"/> 
 		</resource-requirements>
-		<resources-stored />
+                <resources-stored>
+                        <resource name="food" amount="25"/>
+                </resources-stored>
 		<image path="images/dfarm.bmp"/>
-		<image-cancel path="../worker/images/dstop.bmp"/>
-		<meeting-point value="true" image-path="../stronghold/images/dmeeting.bmp"/>
+		<image-cancel path="images/dfarm.bmp"/>
+		<meeting-point value="false"/>
 		<selection-sounds enabled="false"/>
 		<command-sounds enabled="false"/>
 	</parameters>
@@ -96,12 +98,12 @@
 	
 		<command>
 			<type value="produce"/>
-			<name value="produce_pig" />
-			<image path="../pig/images/pig.bmp" />
+			<name value="produce_goat" />
+			<image path="../goat/images/pig.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
-			<produced-unit name="pig"/>
+			<produced-unit name="goat"/>
 		</command>
 
 	</commands>

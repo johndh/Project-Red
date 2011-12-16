@@ -24,7 +24,7 @@
 		<properties>
 			<property value="burnable"/>
 		</properties>
-		<light enabled="false" />
+                <light enabled="true" red="1.0" green="1.0" blue="0.8" />
 		<unit-requirements>
 			<unit name="stronghold" />
 			<unit name="warriors_hall" />
@@ -152,16 +152,6 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="canoneer"/>
-		</command>
-		
-		<command>
-			<type value="produce"/>
-			<name value="produce_turtle"/>
-			<image path="../turtle/images/turtle.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="turtle"/>
 		</command>
 
 		
