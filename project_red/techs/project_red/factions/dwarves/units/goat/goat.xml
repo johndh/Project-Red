@@ -32,17 +32,9 @@
 		<image-cancel path="../worker/images/dstop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="sounds/pig_select1.wav"/>
-			<sound path="sounds/pig_select2.wav"/>
-			<sound path="sounds/pig_select3.wav"/>
-			<sound path="sounds/pig_select4.wav"/>
+			<sound path="sounds/57794__reinsamba__1202-goat.wav"/>
 		</selection-sounds>
-		<command-sounds enabled="true">
-			<sound path="sounds/pig_ack1.wav"/>
-			<sound path="sounds/pig_ack2.wav"/>
-			<sound path="sounds/pig_ack3.wav"/>
-			<sound path="sounds/pig_ack4.wav"/>
-		</command-sounds>
+		<command-sounds enabled="false"/>
 
 	</parameters>
 
@@ -80,10 +72,7 @@
 			<anim-speed value="90"/>
 			<animation path="models/goat_dying.g3d"/>
 			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/pig_die1.wav"/>
-				<sound-file path="sounds/pig_die2.wav"/>
-				<sound-file path="sounds/pig_die3.wav"/>
-				<sound-file path="sounds/pig_die4.wav"/>
+				<sound-file path="sounds/103410__confusion-music__goat-1-c.wav"/>
 			</sound>			
 			<fade value="false"/>
 		</skill>						
