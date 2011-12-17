@@ -1,0 +1,124 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="5" />
+		<height value="3" />
+		<max-hp value="5000" regeneration="1"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="wood"/>				
+		<sight value="15" />
+		<time value="120" />
+		<multi-selection value="false" />
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="any_water" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5"/>
+		<unit-requirements>
+			<unit name="foundry"/>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="100" />
+			<resource name="wood" amount="250" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name= "gold" amount="500"/>
+			<resource name= "wood" amount="600"/>				
+			<resource name= "stone" amount="500"/>				
+			<resource name= "food" amount="100"/>	
+		</resources-stored>
+		<image path="images/utility_barge.bmp" />
+		<image-cancel path="../worker/images/dstop.bmp"/>
+		<meeting-point value="true" image-path="../stronghold/images/dmeeting.bmp"/>
+		<selection-sounds enabled="false"/>
+		<command-sounds enabled="false"/>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/barge.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/barge_construction.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/barge.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/barge_destruct.g3d" />
+			<sound enabled="false"/>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+	
+		<command>
+			<type value="produce"/>
+			<name value="produce_turtle" />
+			<image path="../turtle/images/turtle.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="turtle"/>
+		</command>	
+
+		<!--<command>
+			<type value="produce"/>
+			<name value="produce_dragon_ship" />
+			<image path="../dragon_ship/images/dragon_ship.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="dragon_ship"/>
+		</command>
+		
+		<command>
+			<type value="produce"/>
+			<name value="produce_thunder_ship" />
+			<image path="../thunder_ship/images/thunder_ship.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="thunder_ship"/>
+		</command>-->
+
+	</commands>
+</unit>

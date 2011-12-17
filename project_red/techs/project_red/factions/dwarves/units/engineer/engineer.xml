@@ -147,8 +147,8 @@
         <unit name="bombard" />
         <unit name="observation_balloon" />
         <unit name="turtle"/>
-        <!--
         <unit name="utility_barge"/>
+        <!--
         <unit name="thunder_ship"/>
         <unit name="dragon_ship"/>
         -->
@@ -185,9 +185,7 @@
       <build-skill value="build_skill" />
       <buildings>
         <building name="observation_balloon" />
-        <!--
         <building name="utility_barge"/>
-        -->
       </buildings>
       <start-sound enabled="false" />
       <built-sound enabled="false" />
